@@ -4,7 +4,7 @@ h2 {
     color: gray;
 }
 body {
-    background-color: lightpink;
+    background-color: white;
     margin: 0;
     font-family: Gill Sans, sans-serif;
 }
@@ -13,28 +13,29 @@ body {
     overflow: hidden;
     background-color: #f3f3f3;
 }
-
+/* Navigation bar */
 .navigation a {
     float: left;
-    color: hotpink;
+    color: darkseagreen;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
-
+/* When mouse hovers over the button it highlights the word */
 .navigation a:hover {
-    color:black;
+    color: orange;
 }
 
+/* Home Button */
 .navigation a.active {
-    background-color: #f2f2f2;
-    color: deeppink;
+    color: seagreen;
 }
 
+/* Search icon */
 .navigation b {
     float: right;
-    color: hotpink;
+    color: darkseagreen;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
