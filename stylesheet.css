@@ -76,3 +76,8 @@ body {
     to {opacity: 1}
 }
 
+footer {
+    text-align: left;
+    padding: 3px;
+    color: white;
+}
