@@ -1,17 +1,18 @@
 h2 {
     text-align:center;
-    font-family: American Typewriter, serif;
+    font-family: Didot, serif;
+    font-weight: bolder;
     color: gray;
 }
 body {
-    background-color: white;
+    background-color: #f3f3f3;
     margin: 0;
-    font-family: Gill Sans, sans-serif;
+    font-family: Didot, serif;
 }
 
 .navigation {
     overflow: hidden;
-    background-color: #f3f3f3;
+    background-color: white;
 }
 /* Navigation bar */
 .navigation a {
@@ -29,6 +30,7 @@ body {
 
 /* Home Button */
 .navigation a.active {
+    font-weight: bold;
     color: seagreen;
 }
 
