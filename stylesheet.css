@@ -1,20 +1,27 @@
-h2 {
+/* Heading */
+h1 {
     text-align:center;
-    font-family: Didot, serif;
-    font-weight: bolder;
+    /*font-family: Didot, serif;*/
+    font-style: italic;
     color: gray;
+    font: 200 65px/0.4 'Great Vibes', Helvetica, sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.1);
 }
+
+/* Background colour and general font of web page */
 body {
-    background-color: #f3f3f3;
+    background-color: darkseagreen;
     margin: 0;
     font-family: Didot, serif;
 }
+/* Navigation bar */
 
 .navigation {
     overflow: hidden;
     background-color: white;
 }
-/* Navigation bar */
+
 .navigation a {
     float: left;
     color: darkseagreen;
@@ -43,3 +50,29 @@ body {
     text-decoration: none;
     font-size: 17px;
 }
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1500px;
+    position: relative;
+    margin: auto;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+

@@ -5,11 +5,11 @@
     <meta name = "viewport" content ="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
     <title>Priyanka's Patisserie</title>
-
 </head>
 <body>
-<h2> Priyanka's Patisserie</h2>
+<h1> Priyanka's Patisserie</h1>
 
 <div class="navigation">
     <a class="active" href="#home">Home</a>
@@ -24,7 +24,49 @@
 
     <b href="#"><i class="fa fa-search"></i></b>
     <b href="#"><i class="fa fa-shopping-basket"></i></b>
+
 </div>
+
+</div>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="https://images.unsplash.com/photo-1588539543889-20cc7ce4df55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://images.unsplash.com/photo-1588195542907-a0c0a2ac3312?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://images.unsplash.com/photo-1455731657401-43502b7c1ab9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" style="width:100%">
+    </div>
+</div>
+
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 3000);
+    }
+</script>
+
+/*Footer*/
+
+
 
 </body>
 </html>
