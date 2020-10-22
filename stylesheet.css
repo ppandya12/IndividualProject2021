@@ -97,7 +97,7 @@ body {
 /* Slideshow container */
 .slideshow-container {
     max-width: 1500px;
-    position: relative;
+    position: center;
     margin: auto;
 }
 
@@ -118,6 +118,32 @@ body {
     from {opacity: .4}
     to {opacity: 1}
 }
+
+* {
+    box-sizing: content-box ;
+}
+
+.outer-grid {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.inner-grid {
+    flex:50%;
+    max-width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.inner-grid img {
+    display: block;
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+}
+
 
 h3{
     text-align:center;
