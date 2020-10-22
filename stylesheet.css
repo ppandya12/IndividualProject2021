@@ -29,10 +29,6 @@ body {
     text-decoration: none;
     font-size: 17px;
 }
-/* When mouse hovers over the button it highlights the word */
-.navigation a:hover {
-    color: orange;
-}
 
 /* Home Button */
 .navigation a.active {
@@ -48,6 +44,54 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbutton {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: darkseagreen;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* When mouse hovers over the button it highlights the word */
+
+.navigation a:hover, .dropbutton {
+    color: orange;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: darkseagreen;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    color: orange
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /* Slideshow container */
