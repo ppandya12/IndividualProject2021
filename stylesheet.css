@@ -41,7 +41,7 @@ body {
     float: right;
     color: darkseagreen;
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px 16px;
     text-decoration: none;
     font-size: 17px;
 }
@@ -49,14 +49,15 @@ body {
 .dropdown {
     float: left;
     overflow: hidden;
+    display: inline-block;
 }
 
 .dropdown .dropbutton {
-    font-size: 16px;
+    font-size: 17px;
     border: none;
     outline: none;
     color: darkseagreen;
-    padding: 14px 16px;
+    padding: 12px 16px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -74,6 +75,7 @@ body {
     background-color: white;
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 12px 16px;
     z-index: 1;
 }
 
@@ -94,9 +96,10 @@ body {
     display: block;
 }
 
+
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1500px;
+    max-width: 2000px;
     position: center;
     margin: auto;
 }
@@ -125,11 +128,19 @@ body {
     grid-gap: 20px;
     align-items: stretch;
     justify-items: center;
+    color: black
 }
 .grid img {
     border: 1px solid #ccc;
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
     max-width: 70%;
+}
+
+h4 {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
 }
 
 h3{
