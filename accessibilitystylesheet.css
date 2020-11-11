@@ -1,0 +1,27 @@
+body {
+    background-color: paleturquoise;
+    margin: 0;
+    font-family: Didot, serif;
+}
+
+/* Navigation bar */
+
+.navigation {
+    overflow: hidden;
+    background-color: white;
+}
+
+.navigation a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Home Button */
+.navigation a.active {
+    font-weight: bold;
+    color: white;
+}
