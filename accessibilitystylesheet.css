@@ -12,7 +12,7 @@ body {
 }
 
 .navigation a {
-    float: left;
+    float: right;
     color: black;
     text-align: center;
     padding: 22px 26px;
@@ -28,7 +28,7 @@ body {
 
 
 .dropdown {
-    float: left;
+    float: right;
     overflow: hidden;
     display: inline-block;
 }
