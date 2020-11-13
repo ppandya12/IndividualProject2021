@@ -1,14 +1,14 @@
 body {
     background-color: cornflowerblue;
     margin: 0;
-    font-family: Didot, serif;
+    font-family: 'Balsamiq Sans', cursive;
 }
 
 /* Navigation bar */
 
 .navigation {
     overflow: hidden;
-    background-color: lightgray;
+    background-color: black;
 }
 
 .navigation a {
@@ -23,7 +23,7 @@ body {
 /* Home Button */
 .navigation a.active {
     font-weight: bold;
-    color: mediumblue;
+    color: darkorange;
 }
 
 
@@ -37,7 +37,7 @@ body {
     font-size: 17px;
     border: none;
     outline: none;
-    color: royalblue;
+    color: darkorange;
     padding: 12px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -47,13 +47,13 @@ body {
 /* When mouse hovers over the button it highlights the word */
 
 .navigation a:hover, .dropbutton {
-    color: orange;
+    color: royalblue;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: lightgray;
+    background-color: black;
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     padding: 12px 16px;
@@ -62,7 +62,7 @@ body {
 
 .dropdown-content a {
     float: none;
-    color: royalblue;
+    color: darkorange;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -70,7 +70,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    color: orange;
+    color: royalblue;
 }
 
 .dropdown:hover .dropdown-content {
