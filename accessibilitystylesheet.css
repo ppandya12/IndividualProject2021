@@ -2,8 +2,14 @@ body {
     background-color: cornflowerblue;
     margin: 0;
     font-family: 'Balsamiq Sans', cursive;
+    font-size: 25px;
 }
 
+h2 {
+    text-align:left;
+    color: ghostwhite;
+    font-family: 'Londrina Solid', cursive;
+}
 /* Navigation bar */
 
 .navigation {
@@ -15,7 +21,7 @@ body {
     float: right;
     color: black;
     text-align: center;
-    padding: 22px 26px;
+    padding: 16px 20px;
     text-decoration: none;
     font-size: 17px;
 }
