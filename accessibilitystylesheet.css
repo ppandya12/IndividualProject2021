@@ -1,15 +1,16 @@
+h1 {
+    text-align:center;
+    color: ghostwhite;
+    font-family: 'Finger Paint', cursive;
+}
+
 body {
     background-color: cornflowerblue;
     margin: 0;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Finger Paint', cursive;
     font-size: 25px;
 }
 
-h2 {
-    text-align:left;
-    color: ghostwhite;
-    font-family: 'Londrina Solid', cursive;
-}
 /* Navigation bar */
 
 .navigation {
