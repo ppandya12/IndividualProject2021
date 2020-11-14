@@ -11,14 +11,29 @@ body {
     font-size: 25px;
 }
 
-/* Navigation bar */
+/* Top Navigation bar */
 
-.navigation {
+/* Home Button */
+.topnav c.active {
+    font-weight: bold;
+    color: darkorange;
+}
+
+.topnav{
     overflow: hidden;
     background-color: black;
 }
 
-.navigation a {
+.topnav c {
+    float: left;
+    color: darkorange;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.topnav b {
     float: right;
     color: darkorange;
     text-align: center;
@@ -27,15 +42,43 @@ body {
     font-size: 15px;
 }
 
-/* Home Button */
-.navigation a.active {
-    font-weight: bold;
-    color: darkorange;
+.topnav b:hover, .dropbutton {
+    font-size: 25px;
 }
 
+.topnav .login-container {
+    float: right;
+}
+.topnav .login-container button {
+    float: right;
+    background: #ddd;
+    padding: 5px 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav .login-container button:hover {
+    background: #ccc;
+}
+/* Navigation bar */
+
+.navigation {
+    overflow: hidden;
+    background-color: black;
+}
+
+.navigation a {
+    float: left;
+    color: darkorange;
+    text-align: center;
+    padding: 22px 26px;
+    text-decoration: none;
+    font-size: 15px;
+}
 
 .dropdown {
-    float: right;
+    float: left;
     overflow: hidden;
     display: inline-block;
 }
@@ -55,19 +98,6 @@ body {
 
 .navigation a:hover, .dropbutton {
     color: royalblue;
-    font-size: 25px;
-}
-
-.navigation b {
-    float: right;
-    color: darkorange;
-    text-align: center;
-    padding: 22px 26px;
-    text-decoration: none;
-    font-size: 15px;
-}
-
-.navigation b:hover, .dropbutton {
     font-size: 25px;
 }
 
