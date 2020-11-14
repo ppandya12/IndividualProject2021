@@ -20,11 +20,11 @@ body {
 
 .navigation a {
     float: right;
-    color: black;
+    color: darkorange;
     text-align: center;
     padding: 22px 26px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 /* Home Button */
