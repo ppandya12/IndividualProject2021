@@ -129,9 +129,9 @@ body {
     color: black
 }
 .grid img {
-    border: 5px solid darkorange;
+    border: 1px solid white;
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    height: 175px;
+    width: 175px;
 }
