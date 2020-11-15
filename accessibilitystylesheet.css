@@ -5,7 +5,7 @@ h2 {
 }
 
 body {
-    background-color: black;
+    background-color: midnightblue;
     margin: 0;
     font-family: 'Finger Paint', cursive;
     font-size: 25px;
@@ -132,6 +132,6 @@ body {
     border: 5px solid darkorange;
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
     border-radius: 50%;
-    height: 210px;
-    width: 210px;
+    height: 200px;
+    width: 200px;
 }
