@@ -1,4 +1,4 @@
-h1 {
+h2 {
     text-align:left;
     color: ghostwhite;
     font-family: 'Finger Paint', cursive;
@@ -118,4 +118,18 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
     font-size: 28px;
+}
+
+.grid {
+    display: inline-block;
+    align-items: stretch;
+    justify-items: center;
+    color: black
+}
+.grid img {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    border-radius: 50%;
+    height: 220px;
+    width: 220px;
 }
