@@ -65,7 +65,7 @@ body {
     text-align: center;
     padding: 22px 26px;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 25px;
 }
 
 .dropdown {
@@ -75,7 +75,7 @@ body {
 }
 
 .dropdown .dropbutton {
-    font-size: 22px;
+    font-size: 25px;
     border: none;
     outline: none;
     color: darkblue;
@@ -89,7 +89,7 @@ body {
 
 .navigation a:hover, .dropbutton {
     color: cornflowerblue;
-    font-size: 26px;
+    font-size: 28px;
 }
 
 .dropdown-content {
@@ -117,5 +117,5 @@ body {
 
 .dropdown:hover .dropdown-content {
     display: block;
-    font-size: 26px;
+    font-size: 28px;
 }
