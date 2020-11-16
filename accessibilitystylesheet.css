@@ -150,23 +150,3 @@ body {
     transform: scale(1.2); // 1.1 means "scale to 110% of original size"
 }
 
-.sub {
-    height: 175px;
-    width: 175px;
-    margin: 15px 20px;
-    justify-items: left;
-    border-radius: 50%;
-    display: inline-block;
-}
-
-.sub img{
-    /*border: 5px solid black;*/
-    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-    border-radius: 50%;
-    height: 175px;
-    width: 175px;
-}
-
-.sub:hover {
-    transform: scale(1.2); // 1.1 means "scale to 110% of original size"
-}
