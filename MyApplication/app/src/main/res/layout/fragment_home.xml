@@ -34,7 +34,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="47dp" />
+        tools:layout_editor_absoluteY="126dp" />
 
     <Button
         android:id="@+id/button2"
@@ -44,7 +44,7 @@
         android:textColorHighlight="#00BCD4"
         android:textColorLink="#FFFFFF"
         tools:layout_editor_absoluteX="138dp"
-        tools:layout_editor_absoluteY="210dp" />
+        tools:layout_editor_absoluteY="275dp" />
 
     <ProgressBar
         android:id="@+id/progressBar3"
@@ -52,14 +52,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:progressTint="#9C27B0"
-        tools:layout_editor_absoluteX="318dp"
-        tools:layout_editor_absoluteY="545dp" />
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="433dp" />
 
-    <CalendarView
-        android:id="@+id/calendarView2"
-        android:layout_width="216dp"
-        android:layout_height="225dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="339dp" />
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="61dp"
+        android:layout_height="51dp"
+        android:src="@drawable/ic_launcher_foreground"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="21dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_preferences"
+        tools:layout_editor_absoluteX="331dp"
+        tools:layout_editor_absoluteY="21dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
