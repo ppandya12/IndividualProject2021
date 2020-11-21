@@ -17,6 +17,32 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="252dp"
+        android:layout_height="149dp"
+        android:ems="10"
+        android:inputType="time"
+        android:text="00:00"
+        android:textSize="100sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="191dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="134dp"
+        android:layout_height="61dp"
+        android:text="Start"
+        android:textColorHighlight="#00BCD4"
+        android:textColorLink="#FFFFFF"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="408dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
