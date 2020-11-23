@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#9FA1A4"
     tools:context=".ui.notifications.NotificationsFragment">
 
     <ImageView
@@ -11,6 +12,7 @@
         android:layout_width="41dp"
         android:layout_height="43dp"
         android:src="@android:drawable/ic_menu_delete"
+        android:tint="@color/purple_500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
@@ -23,6 +25,7 @@
         android:layout_width="41dp"
         android:layout_height="43dp"
         android:src="@android:drawable/ic_menu_delete"
+        android:tint="@color/purple_500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
@@ -35,6 +38,7 @@
         android:layout_width="41dp"
         android:layout_height="43dp"
         android:src="@android:drawable/ic_menu_delete"
+        android:tint="@color/purple_500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
@@ -47,6 +51,7 @@
         android:layout_width="41dp"
         android:layout_height="43dp"
         android:src="@android:drawable/ic_menu_delete"
+        android:tint="@color/purple_500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
@@ -70,6 +75,9 @@
             android:id="@+id/button3"
             android:layout_width="297dp"
             android:layout_height="65dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FF9800"
+            android:foregroundTint="#353535"
             android:text="You havent been active for 1 day" />
 
         <Button
@@ -93,7 +101,8 @@
         <Button
             android:id="@+id/button7"
             android:layout_width="297dp"
-            android:layout_height="65dp" />
+            android:layout_height="65dp"
+            android:text="Keep up with your ab workout!" />
 
     </LinearLayout>
 
@@ -114,6 +123,7 @@
         android:layout_width="41dp"
         android:layout_height="43dp"
         android:src="@android:drawable/ic_menu_delete"
+        android:tint="@color/purple_500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
