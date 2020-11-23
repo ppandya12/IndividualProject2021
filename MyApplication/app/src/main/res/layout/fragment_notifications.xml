@@ -7,12 +7,26 @@
     android:backgroundTint="#9FA1A4"
     tools:context=".ui.notifications.NotificationsFragment">
 
+    <TextView
+        android:id="@+id/text_dashboard2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="41dp"
         android:layout_height="43dp"
+        android:contentDescription="@string/delete_button"
         android:src="@android:drawable/ic_menu_delete"
-        android:tint="@color/purple_500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
@@ -24,8 +38,8 @@
         android:id="@+id/imageView3"
         android:layout_width="41dp"
         android:layout_height="43dp"
+        android:contentDescription="@string/delete_button"
         android:src="@android:drawable/ic_menu_delete"
-        android:tint="@color/purple_500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
@@ -37,8 +51,8 @@
         android:id="@+id/imageView4"
         android:layout_width="41dp"
         android:layout_height="43dp"
+        android:contentDescription="@string/delete_button"
         android:src="@android:drawable/ic_menu_delete"
-        android:tint="@color/purple_500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
@@ -50,8 +64,8 @@
         android:id="@+id/imageView2"
         android:layout_width="41dp"
         android:layout_height="43dp"
+        android:contentDescription="@string/delete_button"
         android:src="@android:drawable/ic_menu_delete"
-        android:tint="@color/purple_500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
@@ -79,31 +93,31 @@
             android:backgroundTint="#FF9800"
             android:fontFamily="@font/work_sans_semibold"
             android:foregroundTint="#353535"
-            android:text="You havent been active for 1 day" />
+            android:text="@string/notif_" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="297dp"
             android:layout_height="65dp"
-            android:text="You havent been active in 2 days " />
+            android:text="@string/NOTIF_2" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="297dp"
             android:layout_height="65dp"
-            android:text="You havent been active in 3 days " />
+            android:text="@string/notif_3" />
 
         <Button
             android:id="@+id/button6"
             android:layout_width="297dp"
             android:layout_height="65dp"
-            android:text="Its been a while, we miss you!" />
+            android:text="@string/notif_5" />
 
         <Button
             android:id="@+id/button7"
             android:layout_width="297dp"
             android:layout_height="65dp"
-            android:text="Keep up with your ab workout!" />
+            android:text="@string/notif_4" />
 
     </LinearLayout>
 
@@ -113,7 +127,7 @@
         android:layout_height="48dp"
         android:layout_marginTop="60dp"
         android:fontFamily="@font/work_sans_semibold"
-        android:text="ACTIVITY"
+        android:text="@string/activity_title"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -124,8 +138,8 @@
         android:id="@+id/imageView"
         android:layout_width="41dp"
         android:layout_height="43dp"
+        android:contentDescription="@string/delete_button"
         android:src="@android:drawable/ic_menu_delete"
-        android:tint="@color/purple_500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
