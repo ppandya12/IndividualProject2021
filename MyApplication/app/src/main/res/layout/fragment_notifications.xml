@@ -108,10 +108,11 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="132dp"
-        android:layout_height="56dp"
+        android:layout_width="185dp"
+        android:layout_height="48dp"
         android:layout_marginTop="60dp"
-        android:text=" Activity"
+        android:fontFamily="@font/work_sans_semibold"
+        android:text="ACTIVITY"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
