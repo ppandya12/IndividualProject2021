@@ -77,6 +77,7 @@
             android:layout_height="65dp"
             android:background="#FFFFFF"
             android:backgroundTint="#FF9800"
+            android:fontFamily="@font/work_sans_semibold"
             android:foregroundTint="#353535"
             android:text="You havent been active for 1 day" />
 
@@ -115,7 +116,7 @@
         android:text="ACTIVITY"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
