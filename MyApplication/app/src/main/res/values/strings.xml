@@ -23,4 +23,5 @@
     <string name="delete_button2">delete button</string>
     <string name="delete_button3">delete button</string>
     <string name="delete_button4">delete button</string>
+    <string name="timer">00:00</string>
 </resources>
