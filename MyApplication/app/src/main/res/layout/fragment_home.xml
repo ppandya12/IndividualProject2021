@@ -37,33 +37,34 @@
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="61dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="260dp"
-        android:layout_marginTop="21dp"
+        android:layout_width="64dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginBottom="48dp"
         android:contentDescription="@string/profile"
         android:src="@drawable/ic_launcher_foreground"
         android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         tools:visibility="visible" />
 
     <ImageButton
         android:id="@+id/imageButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="24dp"
+        android:layout_width="59dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="48dp"
         android:contentDescription="@string/settings"
         android:src="@android:drawable/ic_menu_preferences"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toEndOf="@+id/imageButton3" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="168dp"
         android:text="@string/continue_workout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -88,7 +89,9 @@
         android:layout_height="wrap_content"
         android:text="@string/timer"
         android:textSize="120sp"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="154dp" />
+        app:layout_constraintBottom_toTopOf="@+id/text_dashboard3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
