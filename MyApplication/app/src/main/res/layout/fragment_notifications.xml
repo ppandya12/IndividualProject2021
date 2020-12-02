@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#9FA1A4"
+    android:background="#415463"
     tools:context=".ui.notifications.NotificationsFragment">
 
     <ImageView
@@ -44,38 +44,12 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:layout_constraintVertical_bias="0.06" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="41dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="337dp"
-        android:layout_marginTop="277dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="487dp"
-        android:contentDescription="@string/delete_button"
-        android:src="@android:drawable/ic_menu_delete"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="41dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="24dp"
-        android:contentDescription="@string/delete_button"
-        android:src="@android:drawable/ic_menu_delete"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="307dp"
         android:layout_height="332dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="120dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -86,7 +60,7 @@
             android:id="@+id/button3"
             android:layout_width="297dp"
             android:layout_height="65dp"
-            android:fontFamily="@font/work_sans_semibold"
+            android:fontFamily="monospace"
             android:foregroundTint="#353535"
             android:text="@string/notif_" />
 
@@ -94,39 +68,45 @@
             android:id="@+id/button4"
             android:layout_width="297dp"
             android:layout_height="65dp"
+            android:fontFamily="monospace"
             android:text="@string/NOTIF_2" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="297dp"
             android:layout_height="65dp"
+            android:fontFamily="monospace"
             android:text="@string/notif_3" />
 
         <Button
             android:id="@+id/button6"
             android:layout_width="297dp"
             android:layout_height="65dp"
+            android:fontFamily="monospace"
             android:text="@string/notif_5" />
 
         <Button
             android:id="@+id/button7"
             android:layout_width="297dp"
             android:layout_height="65dp"
+            android:fontFamily="monospace"
             android:text="@string/notif_4" />
 
     </LinearLayout>
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="155dp"
-        android:layout_height="68dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="176dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="376dp"
-        android:fontFamily="@font/palanquin_dark"
+        android:fontFamily="monospace"
         android:text="@string/activity_title"
+        android:textColor="#FFFFFF"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />

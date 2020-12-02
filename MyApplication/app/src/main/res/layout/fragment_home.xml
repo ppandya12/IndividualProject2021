@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#415463"
     tools:context=".ui.home.HomeFragment">
 
     <TextView
@@ -24,15 +25,18 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="142dp"
-        android:layout_height="75dp"
-        android:layout_marginBottom="344dp"
+        android:layout_width="185dp"
+        android:layout_height="94dp"
+        android:layout_marginBottom="340dp"
+        android:backgroundTint="#FF9800"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="monospace"
         android:text="@string/start"
-        android:textColorHighlight="#9C27B0"
+        android:textColorHighlight="#FDFCFD"
         android:textColorLink="#FFFFFF"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
@@ -41,6 +45,7 @@
         android:layout_height="55dp"
         android:layout_marginStart="252dp"
         android:layout_marginBottom="48dp"
+        android:background="#FF9800"
         android:contentDescription="@string/profile"
         android:src="@drawable/ic_launcher_foreground"
         android:visibility="visible"
@@ -48,24 +53,16 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:visibility="visible" />
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="59dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="48dp"
-        android:contentDescription="@string/settings"
-        android:src="@android:drawable/ic_menu_preferences"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.659"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="168dp"
+        android:backgroundTint="#FF9800"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="monospace"
         android:text="@string/continue_workout"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,24 +72,47 @@
         android:id="@+id/textView"
         android:layout_width="179dp"
         android:layout_height="35dp"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="monospace"
         android:text="@string/completion"
+        android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.518" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
         android:text="@string/timer"
+        android:textColor="#FAF8F8"
         android:textSize="120sp"
         app:layout_constraintBottom_toTopOf="@+id/text_dashboard3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.418" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="64dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="321dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="753dp"
+        android:background="#FF9800"
+        android:contentDescription="@string/settings"
+        android:src="@android:drawable/ic_menu_manage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
