@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#415463"
+    android:contentDescription="@string/info"
     tools:context=".ui.home.HomeFragment">
 
     <TextView
@@ -91,6 +92,7 @@
         android:layout_height="68dp"
         android:layout_marginBottom="176dp"
         android:background="#FF9800"
+        android:contentDescription="@string/info"
         android:src="@android:drawable/ic_dialog_info"
         android:tint="#FFC107"
         app:layout_constraintBottom_toBottomOf="@+id/textView2"
