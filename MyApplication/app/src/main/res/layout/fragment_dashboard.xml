@@ -46,8 +46,10 @@
                 android:backgroundTint="#FF9800"
                 android:hapticFeedbackEnabled="true"
                 android:text="@string/_1"
+                android:visibility="visible"
                 app:iconTint="#252728"
-                app:rippleColor="#FFFFFF" />
+                app:rippleColor="#FFFFFF"
+                tools:visibility="visible" />
 
             <Button
                 android:id="@+id/button60"
