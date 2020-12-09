@@ -150,3 +150,9 @@ body {
     transform: scale(1.2); // 1.1 means "scale to 110% of original size"
 }
 
+@media only screen and (max-width:620px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+        width: 100%;
+    }
+}
