@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name = "viewport" content ="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -82,7 +83,40 @@
     <b href="#"><i class="fa fa-search"></i></b>
 </div>
 
+</div>
+<div class="slideshow-container">
+    <div class="cakePictures fade">
+        <img src="https://cdn.pixabay.com/photo/2016/08/01/12/28/rehab-center-1560942_960_720.jpg" alt= "Picture of cake" style="width:100%">
+    </div>
+    <div class="cakePictures fade">
+        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80" alt= "Picture of brownie" style="width:100%">
+    </div>
 
+    <div class="cakePictures fade">
+        <img src="https://cdn.pixabay.com/photo/2019/12/06/13/40/anesthesia-4677401_960_720.jpg" alt=" Picture of cupcakes" style="width:100%">
+    </div>
+
+    <div class="cakePictures fade">
+        <img src="https://cdn.pixabay.com/photo/2020/11/06/03/43/protective-suit-5716753_960_720.jpg" alt= "Picture of cheesecake" style="width: 100%">
+    </div>
+</div>
+
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("cakePictures");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 3000);
+    }
+</script>
 
 </body>
 </html>
