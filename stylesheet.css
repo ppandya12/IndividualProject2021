@@ -15,6 +15,7 @@ body {
 .navigation {
     overflow: hidden;
     background-color: dodgerblue;
+    padding: 18px 20px;
 }
 
 .navigation a {
