@@ -9,6 +9,7 @@ body {
     background-color: white;
     margin: 0;
     font-family: 'Raleway', sans-serif;;
+    color : ghostwhite
 }
 /* Navigation bar */
 
@@ -114,6 +115,7 @@ body {
 
 footer {
     text-align: left;
+
     padding: 3px;
     background-color: dodgerblue;
 }
