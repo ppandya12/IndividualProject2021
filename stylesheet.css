@@ -113,9 +113,17 @@ body {
     to {opacity: 1}
 }
 
-footer {
-    text-align: left;
+.column {
+    float: left;
+    width: 33%;
+    padding: 1px;
+    height: 200px;
+    text-align: center;
+}
 
-    padding: 3px;
-    background-color: dodgerblue;
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
