@@ -14,18 +14,18 @@ body {
 
 input[type=text] {
     width: 20%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 5px 5px;
+    margin: 5px 10px;
     box-sizing: border-box;
 }
 
 input[type=submit] {
     background-color: mediumblue;
-    padding: 12px 20px;
+    padding: 5px 12px;
     font-family: 'Raleway', sans-serif;
     color : ghostwhite;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
