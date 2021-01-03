@@ -8,8 +8,8 @@ h1 {
 body {
     background-color: white;
     margin: 0;
-    font-family: 'Raleway', sans-serif;;
-    color : ghostwhite
+    font-family: 'Raleway', sans-serif;
+    color : ghostwhite;
 }
 
 input[type=text] {
@@ -17,6 +17,20 @@ input[type=text] {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: mediumblue;
+    padding: 12px 20px;
+    font-family: 'Raleway', sans-serif;
+    color : ghostwhite;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: orange;
 }
 
 /* Navigation bar */
