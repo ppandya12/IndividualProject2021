@@ -145,12 +145,40 @@ body {
     to {opacity: 1}
 }
 
+.images {
+    height: 200px;
+    width: 175px;
+    margin: 15px 33px;
+    justify-items: center;
+    display: inline-block;
+}
+
+.images img{
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    height: 175px;
+    width: 175px;
+}
+
+button {
+    background-color: mediumblue;
+    padding: 5px 15px;
+    font-family: 'Raleway', sans-serif;
+    color : ghostwhite;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
 h3{
     color: white;
     font-family: 'Comfortaa', cursive;
 }
 
-.column {
+footer{
+    background-color: dodgerblue;
+}
+
+footer .column {
     float: left;
     width: 33%;
     padding: 0px;
@@ -159,7 +187,7 @@ h3{
 }
 
 /* Clear floats after the columns */
-.row:after {
+footer .row:after {
     content: "";
     display: table;
     clear: both;
