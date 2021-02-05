@@ -1,3 +1,10 @@
+.fakeimg {
+    height: 200px;
+    background: #aaa;
+}
+
+
+
 body {
     padding: 0;
     margin: 0;
