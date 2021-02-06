@@ -1,34 +1,7 @@
-.fakeimg {
-    height: 200px;
-    background: #aaa;
-}
-
-
-
 body {
-    padding: 0;
-    margin: 0;
-    background: #f2f6e9;
+    padding-top: 5rem;
 }
-
-.navbar {
-    background: green;
-}
-
-.nav-link,
-.navbar-brand {
-    color: #fff;
-    cursor: pointer;
-}
-
-.nav-link {
-    margin-right: 1em !important;
-}
-
-.nav-link:hover {
-    color: #000;
-}
-
-.navbar-collapse {
-    justify-content: flex-end;
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center;
 }
