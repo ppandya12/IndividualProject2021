@@ -1,7 +1,10 @@
-body {
-    padding-top: 5rem;
+
+/*Makes navigation bar transparent */
+.bg-light {
+    background-color: transparent !important;
 }
-.starter-template {
-    padding: 3rem 1.5rem;
-    text-align: center;
+
+.trn {
+    background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0));
+    z-index: 99;
 }
