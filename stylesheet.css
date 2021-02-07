@@ -1,5 +1,18 @@
+.navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    opacity: 0.5;
+}
 
-/*Makes navigation bar transparent */
+/*Makes navigation bar transparent
 .bg-light {
     background-color: transparent !important;
 }
@@ -8,3 +21,4 @@
     background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0));
     z-index: 99;
 }
+*/
