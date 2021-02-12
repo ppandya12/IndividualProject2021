@@ -8,16 +8,19 @@ body {
     background-size: cover;
 }
 
-h4 {
-    text-align: center;
-    color: black;
-    font-family: 'Nunito', sans-serif;
+.position-relative{
+    position: relative;
+    bottom: 90px;
+    width: 850px;
+    height: 100px;
 }
+
 
 h1 {
     color: ghostwhite;
     font-family: 'Merriweather Sans', sans-serif;
     font-family: 'Nunito', sans-serif;
+
 }
 
 h3 {
@@ -33,6 +36,12 @@ h3 {
 .navigation{
     background-color: darkgreen;
     padding: 10px;
+}
+
+h4 {
+    text-align: center;
+    color: black;
+    font-family: 'Nunito', sans-serif;
 }
 
 footer {

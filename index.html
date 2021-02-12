@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&family=Nunito&family=Ramabhadra&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/v4-shims.css">
 
@@ -31,7 +32,7 @@
     <!-- Navbar  -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
         <div class="container">
-            <a class="navbar-brand" href="#">CAPITAL BANK</a>
+            <a class="navbar-brand" href="#" style ="font-family: 'Ramabhadra', sans-serif; font-size: 25px;"> CAPITAL BANK</a>
             <button
                     class="navbar-toggler"
                     type="button"
@@ -80,16 +81,14 @@
     <div
             class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center"
     >
-        <div class="position-absolute">
-            <h1>Personal Banking</h1>
-            <h3> We have a variety of different accounts, find the one best suited for you </h3>
-                <button type="button" class="btn btn-success rounded-pill">Find out More</button>
+        <div class="position-relative">
+            <h1><b>Personal Banking</b></h1>
+            <h3> Build a better relationship with your money. <br> We have a variety of different personal accounts, find the one best suited for you </h3>
+                <button type="button" class="btn btn-success rounded-pill ">Find out More</button>
         </div>
     </div>
 
-
-
-    <nav class="navigation navbar-expand-lg navbar-light bg-light">
+    <nav class="navigation navbar-expand-lg navbar-dark bg-success">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -113,9 +112,6 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -128,12 +124,12 @@
 
 
 
-    <div class="album py-5 bg-light">
+    <div class="bank-card py-5 bg-light">
         <div class="container">
 
             <div class="row">
                 <div class="col-md-3">
-                    <div class="card mb-4 box-shadow">
+                    <div class="card mb-4 box-shadow align-items-center">
                         <h4 class="card-title">Online Banking</h4>
                         <h2><i class="fas fa-laptop fa-3x"></i></h2>
                         <div class="card-body">
@@ -143,7 +139,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card mb-4 box-shadow">
+                    <div class="card mb-4 box-shadow align-items-center">
                         <h4 class="card-title">Get the App</h4>
                         <h2><i class="fas fa-mobile-alt fa-3x"></i></h2>
                         <div class="card-body">
@@ -153,7 +149,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card mb-4 box-shadow">
+                    <div class="card mb-4 box-shadow align-items-center">
                         <h4 class="card-title">Chat with Us</h4>
                         <h2><i class="fas fa-comments fa-3x"></i></h2>
                         <div class="card-body">
@@ -163,7 +159,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card mb-4 box-shadow">
+                    <div class="card mb-4 box-shadow align-items-center">
                         <h4 class="card-title">Covid-19 Updates</h4>
                         <h2><i class="fas fa-shield-virus fa-3x"></i></h2>
                         <div class="card-body">
@@ -190,16 +186,6 @@
             }
         });
 
-        // removes the need for excess spans which makes the code messy
-        $(function() {
-
-            $("h1")
-            .wrapInner("<span>")
-
-            $("h1 br")
-                .before("<span class='spacer'>")
-                .after("<span class='spacer'>");
-        });
     </script>
 
 </main>
