@@ -3,23 +3,40 @@ body {
     color: black;
 }
 
+.banner-image {
+    background-image: url('https://images.unsplash.com/photo-1535320903710-d993d3d77d29?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDB8fGZpbmFuY2V8ZW58MHwwfDB8&auto=format&fit=crop&w=700&q=60');
+    background-size: cover;
+}
+
 h4 {
     text-align: center;
     color: black;
     font-family: 'Nunito', sans-serif;
 }
 
-h2 {
-    padding: 5px;
-    text-align: center;
+h1 {
+    color: ghostwhite;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
-.nav{
-    background-color: green;
+h3 {
+    color: ghostwhite;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+.navigation{
+    background-color: darkgreen;
     padding: 10px;
 }
 
 footer {
+    background-color: darkgreen;
     padding-top: 3rem;
     padding-bottom: 3rem;
 }

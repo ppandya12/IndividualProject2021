@@ -8,8 +8,10 @@
     <link rel="icon" href="../../../../favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/v4-shims.css">
+
 
     <link href="stylesheet.css" rel="stylesheet">
 
@@ -25,58 +27,106 @@
 <body>
 
 <header>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-light bg-transparent">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+
+    <!-- Navbar  -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">CAPITAL BANK</a>
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <ul class="navbar-nav mr-auto">
-                    <a class="nav-link active" aria-current="page" href="#">Personal</a>
-                    <a class="nav-link" href="#">Private</a>
-                    <a class="nav-link" href="#">Business</a>
-                    <a class="nav-link" href="#">Cooperate</a>
-                    </ul>
-                </div>
-            </div>
-            <div class="btn-group me-1" role="group" aria-label="Basic">
-                <button type="button" class="btn btn-success rounded-pill">Register</button>
-                </div>
 
-            <div class="btn-group ms-1" role="group" aria-label="Second">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mr-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Personal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Private</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cooperate</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="btn-group mx-1" role="group" aria-label="Basic">
+                <button type="button" class="btn btn-success rounded-pill">Register</button>
+            </div>
+
+            <div class="btn-group mx-1" role="group" aria-label="Second">
                 <button type="button" class="btn btn-outline-success rounded-pill">Login</button>
             </div>
         </div>
-
-
     </nav>
+
 </header>
 
 <main role="main">
 
-    <img src="https://images.unsplash.com/photo-1535320903710-d993d3d77d29?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDB8fGZpbmFuY2V8ZW58MHwwfDB8&auto=format&fit=crop&w=700&q=60" class="d-block w-100" alt="...">
+    <!-- Banner Image  -->
+    <div
+            class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center"
+    >
+        <div class="position-absolute">
+            <h1>Personal Banking</h1>
+            <h3> We have a variety of different accounts, find the one best suited for you </h3>
+                <button type="button" class="btn btn-success rounded-pill">Find out More</button>
+        </div>
+    </div>
 
-    <ul class="nav nav-tabs bg-success text-white">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-            <ul class="dropdown-menu ">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Separated link</a></li>
-            </ul>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-    </ul>
+
+
+    <nav class="navigation navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
 
     <div class="album py-5 bg-light">
         <div class="container">
@@ -125,6 +175,32 @@
             </div>
         </div>
     </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+
+        //makes the top fixed nav bar black when the user scroll down on the webpage
+        var nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 100) {
+                nav.classList.add('bg-dark', 'shadow');
+            } else {
+                nav.classList.remove('bg-dark', 'shadow');
+            }
+        });
+
+        // removes the need for excess spans which makes the code messy
+        $(function() {
+
+            $("h1")
+            .wrapInner("<span>")
+
+            $("h1 br")
+                .before("<span class='spacer'>")
+                .after("<span class='spacer'>");
+        });
+    </script>
 
 </main>
 
