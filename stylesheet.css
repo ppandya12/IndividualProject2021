@@ -15,6 +15,13 @@ body {
     height: 100px;
 }
 
+.btn-success {
+    background: #198754; }
+
+.btn-success:hover, .btn-success:focus, .btn-success:active {
+    background-color:darkmagenta !important; }
+.btn-success.active {
+    background-color: darkmagenta !important; }
 
 h1 {
     color: ghostwhite;
