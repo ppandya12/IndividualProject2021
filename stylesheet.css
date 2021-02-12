@@ -51,14 +51,20 @@ h4 {
     font-family: 'Nunito', sans-serif;
 }
 
+h5 {
+    text-align: left;
+    color: ghostwhite;
+    font-family: 'Nunito', sans-serif;
+}
+
 footer {
     background-color: darkgreen;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 footer p {
-    margin-bottom: .25rem;
+    margin-bottom: .5rem;
 }
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
