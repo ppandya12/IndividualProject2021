@@ -1,3 +1,14 @@
+h4 {
+    text-align: center;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+}
+
+h2 {
+    padding: 5px;
+    text-align: center;
+}
+
 .nav{
     background-color: green;
     padding: 10px;
