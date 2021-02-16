@@ -42,7 +42,7 @@ h3 {
 
 .navigation{
     background-color: darkgreen;
-    padding: 10px;
+    padding: 15px;
 }
 
 h4 {
@@ -61,10 +61,9 @@ footer {
     background-color: darkgreen;
     padding-top: 5px;
     padding-bottom: 5px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
 }
 
-footer p {
-    margin-bottom: .5rem;
-}
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
