@@ -18,18 +18,14 @@ body {
     background: #198754; }
 
 .btn-success:hover, .btn-success:focus, .btn-success:active {
-    background-color: rebeccapurple !important; }
+    background-color: darkorange !important; }
 .btn-success.active {
-    background-color: rebeccapurple !important; }
+    background-color: darkorange !important; }
 
 .btn-outline-dark{
     background: black;
 }
 
-btn-outline-dark:hover, .btn-outline-dark:focus, .btn-outline-dark:active{
-    background-color: rebeccapurple !important; }
-.btn-outline-dark.active {
-    background-color: rebeccapurple !important; }
 
 
 
