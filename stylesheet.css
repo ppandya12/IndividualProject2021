@@ -26,8 +26,12 @@ body {
 .btn-outline-dark{
     background: black;
 }
-a:link {
+d:link {
     color: green;
+}
+
+d:hover{
+    color: yellowgreen;
 }
 
 a:hover {
@@ -39,7 +43,7 @@ a:active {
 }
 
 c:hover {
-    color: darkgreen !important;
+    color: yellowgreen !important;
 }
 
 c:active {
