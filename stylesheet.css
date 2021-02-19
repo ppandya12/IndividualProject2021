@@ -1,5 +1,6 @@
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif !important;
+    background-color: black;
 }
 
 .banner-image {
@@ -18,16 +19,32 @@ body {
     background: #198754; }
 
 .btn-success:hover, .btn-success:focus, .btn-success:active {
-    background-color: darkorange !important; }
+    background-color: yellowgreen !important; }
 .btn-success.active {
-    background-color: darkorange !important; }
+    background-color: yellowgreen !important; }
 
 .btn-outline-dark{
     background: black;
 }
+a:link {
+    color: green;
+}
 
+a:hover {
+    color: gold !important;
+}
 
+a:active {
+    color: gold !important;
+}
 
+c:hover {
+    color: darkgreen !important;
+}
+
+c:active {
+    color: darkgreen !important;
+}
 
 h1 {
     color: ghostwhite;
@@ -46,9 +63,16 @@ h3 {
     padding: 10px;
 }
 
-.navigation{
-    background-color: darkgreen;
-    padding: 15px;
+.navbar {
+    margin-top: 56px;
+}
+
+.navigation {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-nav > li > .dropdown-menu { background-color: whitesmoke !important;
 }
 
 .col-text{
