@@ -8,6 +8,14 @@ body {
     background-size: cover;
 }
 
+
+/*header {
+    width: 100%;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1535320903710-d993d3d77d29?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDB8fGZpbmFuY2V8ZW58MHwwfDB8&auto=format&fit=crop&w=700&q=60') no-repeat 50% 50%;
+    background-size: cover;
+}*/
+
 .position-relative{
     position: relative;
     bottom: 90px;
@@ -23,9 +31,7 @@ body {
 .btn-success.active {
     background-color: yellowgreen !important; }
 
-.btn-outline-dark{
-    background: black;
-}
+
 d:link {
     color: green;
 }
@@ -71,10 +77,12 @@ h3 {
     margin-top: 56px;
 }
 
+
 .navigation {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 
 .navbar-nav > li > .dropdown-menu { background-color: whitesmoke !important;
 }
@@ -115,3 +123,5 @@ footer {
 
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+
