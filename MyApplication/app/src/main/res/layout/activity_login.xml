@@ -5,7 +5,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@draw"
     android:backgroundTint="#FFFFFF"
     android:foregroundTint="#4CAF50"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -25,11 +25,9 @@
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.537"
-        tools:text="@tools:sample/date/mmddyy" />
+        tools:text="@tools:sample/us_zipcodes" />
 
     <Button
         android:id="@+id/button9"
@@ -38,12 +36,56 @@
         android:backgroundTint="#357C38"
         android:fontFamily="@font/ramabhadra"
         android:hapticFeedbackEnabled="true"
-        android:text="Login"
+        android:text="@string/login"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.664" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="304dp"
+        android:layout_height="53dp"
+        android:fontFamily="@font/ramabhadra"
+        android:text="@string/capital_bank"
+        android:textColor="@color/black"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="243dp"
+        android:layout_height="42dp"
+        android:fontFamily="@font/ramabhadra"
+        android:text="@string/welcome_back_john"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.248" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ramabhadra"
+        android:text="Please enter your passcode to log in"
+        android:textColor="#A3000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.317" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
