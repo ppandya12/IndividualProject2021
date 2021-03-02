@@ -29,8 +29,8 @@
 
 <header>
 
-    <!-- Navbar  -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <!-- Main Navbar  -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
         <div class="container">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
                 <span class="navbar-toggler-icon"></span>
@@ -118,6 +118,7 @@
         </div>
     </nav>
 
+    <!-- Top Navbar - not sticky top  -->
     <nav class="navigation navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -152,24 +153,26 @@
         </div>
     </nav>
 
-
-</header>
-
-<main role="main">
-
-    <!-- Banner Image  -->
+    <!-- Banner Image -->
     <div
             class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center"
     >
         <div class="position-relative">
             <h1><b>Personal Banking</b></h1>
             <h3> Build a better relationship with your money. <br> We have a variety of different personal accounts, find the one best suited for you </h3>
-                <button type="button" class="btn btn-success rounded-pill btn-lg">Find out More</button>
+            <button type="button" class="btn btn-success rounded-pill btn-lg">Find out More</button>
         </div>
     </div>
 
+</header>
+
+<main role="main">
+
+    <!-- Horizontal line which divides up the webpage - makes it more structured  -->
     <hr style="height:7px; color:darkgreen">
 
+
+    <!-- Column of Links -->
     <div class="container">
         <h4><u><b>Products</b></u></h4>
         <div class="row">
@@ -200,8 +203,10 @@
         </div>
     </div>
 
+    <!-- Horizontal line which divides up the webpage -->
     <hr style="height:7px; color:darkgreen">
 
+        <!-- Card displaying information -->
         <div class="bank-card py-5 bg-light">
         <div class="container">
 
@@ -250,8 +255,10 @@
         </div>
     </div>
 
+    <!-- Horizontal line which divides up the webpage-->
     <hr style="height:7px; color:darkgreen">
 
+    <!-- Information section -->
     <div class="container">
         <h4><b>Important Information</b></h4>
             <p> 1. You must be 16 years or older to be able to use the Capital Bank app. Terms and Conditions Apply. <br>
@@ -261,9 +268,11 @@
         </p>
     </div>
 
+    <!-- Horizontal line which divides up the webpage -->
     <hr style="height:7px; color:darkgreen">
 
 
+    <!-- Java Script for the responsive nav bar -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript">
 
@@ -277,9 +286,7 @@
                 nav.classList.remove('bg-dark', 'shadow');
             }
         });
-
     </script>
-
 </main>
 
 <!-- Footer -->
