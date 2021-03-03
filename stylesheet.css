@@ -8,6 +8,9 @@ body {
     background-size: cover;
 }
 
+.shadow{
+    margin-top:0;
+}
 
 /*header {
     width: 100%;
@@ -63,6 +66,18 @@ h1 {
 
 }
 
+.navbar {
+    margin-top: 56px;
+}
+
+.navMarginTop-0{
+    margin-top:0;
+}
+
+.navbar.navbar-dark{
+    transition:all 0.5s;
+}
+
 h3 {
     color: ghostwhite;
     font-family: 'Merriweather Sans', sans-serif;
@@ -73,9 +88,6 @@ h3 {
     padding: 10px;
 }
 
-.navbar {
-    margin-top: 56px;
-}
 
 
 .navigation {
@@ -122,6 +134,8 @@ footer {
 }
 
 
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
 
 
