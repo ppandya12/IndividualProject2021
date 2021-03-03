@@ -5,87 +5,195 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@draw"
-    android:backgroundTint="#FFFFFF"
+    android:background="#C3000000"
     android:foregroundTint="#4CAF50"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:textAlignment="center"
     tools:context=".ui.login.LoginActivity">
 
     <EditText
         android:id="@+id/Password"
-        android:layout_width="229dp"
-        android:layout_height="59dp"
+        android:layout_width="278dp"
+        android:layout_height="65dp"
         android:autofillHints=""
         android:contentDescription="@string/invalid_password"
         android:ems="10"
         android:inputType="numberPassword"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.418"
         tools:text="@tools:sample/us_zipcodes" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="149dp"
-        android:layout_height="63dp"
-        android:backgroundTint="#357C38"
-        android:fontFamily="@font/ramabhadra"
-        android:hapticFeedbackEnabled="true"
-        android:text="@string/login"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.664" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="304dp"
-        android:layout_height="53dp"
+        android:layout_width="335dp"
+        android:layout_height="76dp"
         android:fontFamily="@font/ramabhadra"
         android:text="@string/capital_bank"
-        android:textColor="@color/black"
-        android:textSize="38sp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintHorizontal_bias="0.671"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.11" />
+        app:layout_constraintVertical_bias="0.07" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="243dp"
-        android:layout_height="42dp"
-        android:fontFamily="@font/ramabhadra"
+        android:layout_width="300dp"
+        android:layout_height="46dp"
+        android:fontFamily="sans-serif"
         android:text="@string/welcome_back_john"
-        android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.248" />
+        app:layout_constraintVertical_bias="0.227" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/ramabhadra"
-        android:text="Please enter your passcode to log in"
-        android:textColor="#A3000000"
+        android:fontFamily="sans-serif"
+        android:text="Please enter your 5-digit passcode to log in"
+        android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.317" />
+        app:layout_constraintVertical_bias="0.301" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="266dp"
+        android:layout_height="296dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866">
+
+        <Button
+            android:id="@+id/button29"
+            android:layout_width="wrap_content"
+            android:layout_height="74dp"
+            android:backgroundTint="#9F36913A"
+            android:text="@string/_2"
+            app:cornerRadius="@android:dimen/app_icon_size"
+            app:layout_column="5"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/button28"
+            android:layout_width="wrap_content"
+            android:layout_height="74dp"
+            android:backgroundTint="#9F36913A"
+            android:text="@string/_9"
+            app:cornerRadius="@android:dimen/app_icon_size"
+            app:layout_column="6"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/button27"
+            android:layout_width="wrap_content"
+            android:layout_height="74dp"
+            android:backgroundTint="#9F36913A"
+            android:text="@string/_7"
+            app:cornerRadius="@android:dimen/app_icon_size"
+            app:layout_column="4"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/button26"
+            android:layout_width="wrap_content"
+            android:layout_height="74dp"
+            android:backgroundTint="#9F36913A"
+            android:text="@string/_4"
+            app:cornerRadius="@android:dimen/app_icon_size"
+            app:layout_column="4"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/button25"
+            android:layout_width="wrap_content"
+            android:layout_height="74dp"
+            android:backgroundTint="#9F36913A"
+            android:text="@string/_8"
+            app:cornerRadius="@android:dimen/app_icon_size"
+            app:layout_column="5"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/button22"
+            android:layout_width="wrap_content"
+            android:layout_height="74dp"
+            android:backgroundTint="#9F36913A"
+            android:text="@string/_3"
+            app:cornerRadius="@android:dimen/app_icon_size"
+            app:layout_column="6"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="74dp"
+            android:backgroundTint="#9F36913A"
+            android:text="@string/_1"
+            app:cornerRadius="@android:dimen/app_icon_size"
+            app:layout_column="4"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="wrap_content"
+            android:layout_height="74dp"
+            android:backgroundTint="#9F36913A"
+            android:text="@string/_6"
+            app:cornerRadius="@android:dimen/app_icon_size"
+            app:layout_column="6"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/button23"
+            android:layout_width="wrap_content"
+            android:layout_height="74dp"
+            android:backgroundTint="#9F36913A"
+            android:text="@string/_5"
+            app:cornerRadius="@android:dimen/app_icon_size"
+            app:layout_column="5"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/button24"
+            android:layout_width="wrap_content"
+            android:layout_height="74dp"
+            android:backgroundTint="#9F36913A"
+            android:text="0"
+            app:cornerRadius="@android:dimen/app_icon_size"
+            app:layout_column="5"
+            app:layout_row="3" />
+
+    </androidx.gridlayout.widget.GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
