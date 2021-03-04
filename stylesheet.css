@@ -100,7 +100,7 @@ body {
     font-size: 17px;
 }
 
-.topnav .search-container {
+.navigation .search-container {
     float: right;
 }
 
@@ -185,6 +185,7 @@ body {
     animation-duration: 1.5s;
 }
 
+
 @-webkit-keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
@@ -244,6 +245,11 @@ button {
     right: 0;
 }
 
+hr {
+    border: 5px solid dodgerblue;
+    border-radius: 5px;
+}
+
 footer{
     background-color: dodgerblue;
 }
@@ -263,16 +269,6 @@ footer .row:after {
     clear: both;
 }
 
-hr {
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
-    background-color: dodgerblue;
-}
 
 @media screen and (max-width: 600px) {
     .topnav a, .topnav input[type=text] {
