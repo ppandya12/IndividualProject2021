@@ -14,7 +14,7 @@ h2 {
     text-align:center;
     color: black;
     font-family: 'Comfortaa', cursive;
-    padding-left: 10px;
+    font-size: 25px;
 }
 
 h3{
@@ -61,6 +61,7 @@ body {
     border: none;
     border-radius: 15px;
     cursor: pointer;
+
 }
 
 .container input[type=submit]:hover {
@@ -126,6 +127,10 @@ body {
     background: #ccc;
 }
 
+.navigation button[type=submit]:hover {
+    background-color: orange;
+}
+
 .dropdown {
     float: left;
     overflow: hidden;
@@ -184,6 +189,57 @@ body {
     animation-name: fade;
     animation-duration: 1.5s;
 }
+
+/* Style the form */
+#regForm {
+    background-color: #ffffff;
+    margin: 50px auto;
+    padding: 0px;
+    width: 70%;
+    min-width: 300px;
+    color: black !important;
+}
+
+/* Style the input fields */
+.tab input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+.tab input.invalid {
+    background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #4CAF50;
+}
+
 
 
 @-webkit-keyframes fade {
@@ -271,14 +327,14 @@ footer .row:after {
 
 
 @media screen and (max-width: 600px) {
-    .topnav a, .topnav input[type=text] {
+    .navigation a, .navigation input[type=text] {
         float: none;
         display: block;
         text-align: left;
         width: 100%;
         margin: 0;
         padding: 14px;
-    }    .topnav input[type=text] {
+    }    .navigation input[type=text] {
              border: 1px solid #ccc;
          }
 }
