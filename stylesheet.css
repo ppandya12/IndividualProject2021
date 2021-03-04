@@ -218,6 +218,22 @@ body {
     display: none;
 }
 
+
+.nextprev button[type=button]{
+    background-color: mediumblue;
+    padding: 10px 45px;
+    font-family: 'Raleway', sans-serif;
+    color : ghostwhite;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.nextprev button[type=button]:hover {
+    background-color: orange;
+}
+
+
 /* Make circles that indicate the steps of the form: */
 .step {
     height: 15px;
