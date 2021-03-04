@@ -25,7 +25,7 @@ h3{
 .info {
     text-align:center;
     color: black !important;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Raleway', sans-serif;
     padding-left: 10px;
 }
 
@@ -253,7 +253,7 @@ body {
 
 /* Mark the steps that are finished and valid: */
 .step.finish {
-    background-color: #4CAF50;
+    background-color: dodgerblue;
 }
 
 
