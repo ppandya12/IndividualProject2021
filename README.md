@@ -13,6 +13,14 @@ Focal HCI matters which I wish to tackle within this interface are; navigation, 
 
 Tasks users would be able to carry out (Functionality): 
 - Log in to their account 
+- Register/Open an account
+- Select which account you want to access (Private, Public, Business and Co-operate)
+- View products the bank offer (current accounts, credit cards, mortgages etc...)
+- Contact a worker if they have any queries
+- View other possible ways of accessing their banking information 
+- View any Updates 
+- View important information
+- Search on the website 
 
 # Visuals 
 - screenshots or video link?
