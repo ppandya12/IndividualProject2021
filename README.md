@@ -7,7 +7,7 @@ Medical clinic websites are essential and are used by a wide age range alongside
 Therefore ensuring that the web page itself is consistent, efficient, simple yet effective is crucial when creating this 
 kind of interface. 
 
-The main HCI issues which I will be focusing on with this interface are; human perception, 
+The main HCI issues which I will be focusing on with this interface are; human perception, usability, 
 age/special needs issues and navigation.
 
 Tasks users would be able to carry out (Functionality): 
