@@ -17,7 +17,11 @@ h2{
     font-size: 35px;
 }
 
-
+h3{
+    color: white;
+    float: right;
+    font-family: 'Comfortaa', cursive;
+}
 
 .apptForm input[type=text], select, textarea {
     width: 100%;
@@ -26,6 +30,7 @@ h2{
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
+    font-size: 15px !important;
 }
 
 .apptForm label {
