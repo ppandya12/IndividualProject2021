@@ -10,17 +10,6 @@ h1 {
     padding-left: 10px;
 }
 
-h2 {
-    text-align:center;
-    color: black;
-    font-family: 'Comfortaa', cursive;
-    font-size: 25px;
-}
-
-h3{
-    color: white;
-    font-family: 'Comfortaa', cursive;
-}
 
 .info {
     text-align:center;
@@ -29,12 +18,15 @@ h3{
     padding-left: 10px;
 }
 
-/* Background colour and general font of web page */
-body {
-    background-color: white;
-    margin: 0;
+button {
+    background-color: mediumblue;
+    padding: 5px 15px;
     font-family: 'Raleway', sans-serif;
     color : ghostwhite;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
 }
 
 .container {
@@ -42,15 +34,16 @@ body {
     text-align: right;
     color: ghostwhite;
     font-family: 'Raleway', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     padding : 0px 3px;
 }
 
 .container input[type=text] {
     width: 25%;
-    padding: 5px 2px;
+    padding: 5px 10px;
     margin: 5px 0px;
     box-sizing: border-box;
+    border-radius: 25px;
 }
 
 .container input[type=submit] {
@@ -85,24 +78,15 @@ body {
     font-size: 17px;
 }
 
-.navigation b {
-     float: right;
-     color: ghostwhite;
-     text-align: center;
-     padding: 14px 16px;
-     text-decoration: none;
-     font-size: 12px;
- }
-
 /* Home Button */
 .navigation a.active {
     font-weight: bold;
     color: ghostwhite;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .navigation .search-container {
-    float: right;
+    float:right;
 }
 
 .navigation input[type=text] {
@@ -110,6 +94,7 @@ body {
     margin-top: 8px;
     font-size: 17px;
     border: none;
+    border-radius: 25px;
 }
 
 .navigation .search-container button {
@@ -138,7 +123,7 @@ body {
 }
 
 .dropdown .dropbutton {
-    font-size: 17px;
+    font-size: 20px;
     border: none;
     outline: none;
     color: ghostwhite;
@@ -173,148 +158,6 @@ body {
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-/* Slideshow container */
-.slideshow-container {
-    max-width: 2000px;
-    position: center;
-    margin: auto;
-}
-
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-/* Style the form */
-#regForm {
-    background-color: #ffffff;
-    margin: 50px auto;
-    padding: 0px;
-    width: 70%;
-    min-width: 300px;
-    color: black !important;
-}
-
-/* Style the input fields */
-.tab input {
-    padding: 10px;
-    width: 100%;
-    font-size: 17px;
-    border: 1px solid #aaaaaa;
-}
-
-/* Mark input boxes that gets an error on validation: */
-.tab input.invalid {
-    background-color: #ffdddd;
-}
-
-/* Hide all steps by default: */
-.tab {
-    display: none;
-}
-
-
-.nextprev button[type=button]{
-    background-color: mediumblue;
-    padding: 10px 45px;
-    font-family: 'Raleway', sans-serif;
-    color : ghostwhite;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-.nextprev button[type=button]:hover {
-    background-color: orange;
-}
-
-
-/* Make circles that indicate the steps of the form: */
-.step {
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbbbbb;
-    border: none;
-    border-radius: 50%;
-    display: inline-block;
-    opacity: 0.5;
-}
-
-/* Mark the active step: */
-.step.active {
-    opacity: 1;
-}
-
-/* Mark the steps that are finished and valid: */
-.step.finish {
-    background-color: dodgerblue;
-}
-
-
-
-@-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-.images {
-    height: 200px;
-    width: 175px;
-    margin: 15px 33px;
-    justify-items: center;
-    display: inline-block;
-}
-
-.images img{
-    height: 175px;
-    width: 175px;
-}
-
-button {
-    background-color: mediumblue;
-    padding: 5px 15px;
-    font-family: 'Raleway', sans-serif;
-    color : ghostwhite;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: all 0.5s;
-}
-
-.button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-
-.button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-
-.button:hover span {
-    padding-right: 25px;
-}
-
-.button:hover span:after {
-    opacity: 1;
-    right: 0;
 }
 
 hr {

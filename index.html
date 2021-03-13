@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name = "viewport" content ="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
@@ -21,7 +22,7 @@
             <input type="text" id="fname" name="fname">
             <label for="lname">Password:</label>
             <input type="text" id="lname" name="lname">
-            <input type="submit" value="Submit">
+            <input type="submit" onclick="check(this.form)" value="submit">
         </form>
     </div>
 
@@ -70,17 +71,6 @@
         </div>
 
         <div class="dropdown">
-            <button class="dropbutton">The Team
-                <i class="fa fa-fw fa-user-md"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#">Doctors</a>
-                <a href="#">Nurses</a>
-                <a href="#">Reception and Admin</a>
-            </div>
-        </div>
-
-        <div class="dropdown">
             <button class="dropbutton">New Patients
                 <i class="fa fa-fw fa-user-plus"></i>
             </button>
@@ -103,8 +93,6 @@
                 <a href="#">Children's Health</a>
             </div>
         </div>
-
-        <a href="#">Contact Us <i class="fa fa-fw fa-envelope"></i></a>
 
         <!-- Search bar  -->
         <form action="/action_page.php">
@@ -236,6 +224,19 @@
     </footer>
 
     <script>
+        function check(form)/*function to check userid & password*/
+        {
+            //the following code checks whether the entered userid and password are matching
+            if(form.fname.value == "john" && form.lname.value == "smith")
+            {
+                window.open('loggedIn.html')//opens the target page while Id & password matches
+            }
+            else
+            {
+                alert("Error Password or Username")//displays error message*/
+            }
+        }
+
         //javascript for slideshow
         var myIndex = 0;
         carousel();

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content ="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="appt.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Englefield Medical Centre</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+</head>
+<body>
+<header>
+    <!-- Shows patients name once logged in -->
+    <div class="container">
+        <h3 style="font-size: 21px">John Smith</h3>
+    </div>
+
+    <!-- Medical Centre Name  -->
+    <h1>Englefield Green Medical Center</h1>
+
+    <!-- Navbar with icons  -->
+    <div class="navigation">
+        <a class="active" href="#">Home <i class="fa fa-fw fa-home"></i></a>
+
+        <div class="dropdown">
+            <button class="dropbutton">Appointments
+                <i class="fa fa-fw fa-calendar"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Book Appointment</a>
+                <a href="#">Telephone Consultation</a>
+                <a href="#">Change Appointment</a>
+                <a href="#">Cancel Appointment</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbutton">Prescriptions
+                <i class="fa fa-fw fa-file-text-o"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">New Prescription </a>
+                <a href="#">Repeat Prescriptions</a>
+                <a href="#">Private Prescriptions</a>
+                <a href="#">Prescription Cost</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbutton">Opening Times
+                <i class="fa fa-fw fa-clock-o"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href ="#">
+                    <p> Monday - Friday : 8am - 5pm <br>
+                        Saturday : 10am - 3pm<br>
+                        Sunday : Closed </p>
+                </a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbutton">New Patients
+                <i class="fa fa-fw fa-user-plus"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Registration Forms</a>
+                <a href="#">Overseas Visitors</a>
+                <a href="#">Temporary visitors</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbutton">Services
+                <i class="fa fa-plus-square"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Screening</a>
+                <a href="#">Minor Surgery</a>
+                <a href="#">Men's Health</a>
+                <a href="#">Women's Health</a>
+                <a href="#">Children's Health</a>
+            </div>
+        </div>
+
+        <!-- Search bar  -->
+        <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+</header>
+
+
+<!-- Booking Form  -->
+<div class="apptForm">
+    <form action="/action_page.php">
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="telephone">Telephone Number</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="telephone" placeholder="Your contact number..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="days">Pick a day</label>
+            </div>
+            <div class="col-75">
+                <select id="days" name="days">
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                    <option value="saturday">Saturday</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="symptoms">Symptoms</label>
+            </div>
+            <div class="col-75">
+                <label for="symptoms">Headache</label>
+                <input type="checkbox" id="symptoms" onclick="myFunction()">
+                <label for="symptoms">Nausea</label>
+                <input type="checkbox" id="symptoms" onclick="myFunction()">
+                <label for="lump">Lump</label>
+                <input type="checkbox" id="lump" onclick="myFunction()">
+                <label for="symptoms">Sudden weight loss</label>
+                <input type="checkbox" id="symptoms" onclick="myFunction()">
+                <label for="symptoms">Temperature</label>
+                <input type="checkbox" id="symptoms" onclick="myFunction()">
+                <label for="symptoms">Body ache</label>
+                <input type="checkbox" id="symptoms" onclick="myFunction()">
+                <label for="symptoms">Allergies</label>
+                <input type="checkbox" id="symptoms" onclick="myFunction()">
+                <label for="symptoms">Sore Throat</label>
+                <input type="checkbox" id="symptoms" onclick="myFunction()">
+                <label for="symptoms">Other</label>
+                <input type="checkbox" id="symptoms" onclick="myFunction()">
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="subject">If selected other</label>
+            </div>
+            <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Please describe your symptoms here.." style="height:200px"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+
+<script>
+    function myFunction() {
+        var checkBox = document.getElementById("symptoms");
+        var text = document.getElementById("text");
+        if (checkBox.checked == true){
+            text.style.display = "block";
+        } else {
+            text.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
