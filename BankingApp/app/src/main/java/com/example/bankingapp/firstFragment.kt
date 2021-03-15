@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import android.widget.Toast
 import androidx.navigation.Navigation
 
 // TODO: Rename parameter arguments, choose names that match
@@ -35,6 +36,7 @@ class firstFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         // Link image button to transactions page
         val root = inflater.inflate(R.layout.fragment_first, container, false)
 
