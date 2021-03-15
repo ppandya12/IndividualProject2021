@@ -164,7 +164,7 @@
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
-                    android:background="@drawable/roundbuttons"
+                    android:background="@drawable/roundedcorners"
                     android:cropToPadding="false"
                     android:scaleType="center"
                     android:src="@drawable/ic_chat"
@@ -177,7 +177,7 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/roundbuttons"
+                    android:background="@drawable/roundedcorners"
                     android:src="@drawable/ic_phone"
                     android:tint="#388E3C" />
 
@@ -188,7 +188,7 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/roundbuttons"
+                    android:background="@drawable/roundedcorners"
                     android:src="@drawable/ic_mail"
                     android:tint="#388E3C" />
 
