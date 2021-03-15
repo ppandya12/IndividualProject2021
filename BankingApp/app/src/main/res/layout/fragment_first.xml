@@ -6,6 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".firstFragment">
 
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="Mr John Smith "
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="38dp"
@@ -26,7 +42,8 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="18dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="40dp"
         android:fontFamily="@font/comfortaa_bold"
         android:text="My Account"
         android:textColor="@color/grey"
@@ -34,7 +51,8 @@
         app:layout_constraintBottom_toTopOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -42,7 +60,7 @@
         android:layout_height="153dp"
         android:layout_marginStart="42dp"
         android:layout_marginEnd="42dp"
-        android:layout_marginBottom="420dp"
+        android:layout_marginBottom="400dp"
         app:cardBackgroundColor="@color/green2"
         app:cardCornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -75,9 +93,9 @@
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:layout_weight="1"
                     android:fontFamily="monospace"
-                    android:layout_marginLeft="10dp"
                     android:text="£10,578"
                     android:textColor="#FFFFFF"
                     android:textSize="48sp" />
@@ -104,22 +122,6 @@
                 android:textSize="18sp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="20dp"
-        android:fontFamily="@font/comfortaa"
-        android:text="Mr John Smith "
-        android:textAlignment="center"
-        android:textColor="@color/grey"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
@@ -237,18 +239,21 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="292dp"
+        android:layout_height="54dp"
         android:background="@drawable/roundedcorners"
-        android:text="Download latest Bank Statement"
         android:elevation="8dp"
+        android:fontFamily="@font/comfortaa_bold"
         android:onClick="onClick"
+        android:text="Download latest Bank Statement"
         android:textColor="@color/green2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.521"
-        tools:ignore="OnClick"/>
+        app:layout_constraintVertical_bias="0.538"
+        app:rippleColor="#FFFFFF"
+        tools:ignore="OnClick" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
