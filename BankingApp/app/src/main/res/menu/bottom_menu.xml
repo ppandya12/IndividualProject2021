@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/firstFragment"
+        android:title="Account"
+        android:icon="@drawable/ic_account" />
+
+    <item android:id="@+id/secondFragment"
+          android:title="Transaction"
+          android:icon="@drawable/ic_transactions" />
+
+    <item
+        android:id="@+id/thirdFragment"
+        android:title="Pay and Transfer"
+        android:icon="@drawable/ic_transfer" />
+
+    <item
+        android:id="@+id/fourthFragment"
+        android:title="Help"
+        android:icon="@drawable/ic_help"/>
+</menu>
