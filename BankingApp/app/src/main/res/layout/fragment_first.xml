@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
     tools:context=".firstFragment">
 
     <TextView
@@ -58,16 +59,16 @@
         android:id="@+id/cardView"
         android:layout_width="327dp"
         android:layout_height="153dp"
-        android:layout_marginStart="42dp"
-        android:layout_marginEnd="42dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="34dp"
         android:layout_marginBottom="400dp"
         app:cardBackgroundColor="@color/green2"
         app:cardCornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -242,6 +243,7 @@
         android:layout_width="292dp"
         android:layout_height="54dp"
         android:background="@drawable/roundedcorners"
+        android:backgroundTint="#F0F3EF"
         android:elevation="8dp"
         android:fontFamily="@font/comfortaa_bold"
         android:onClick="onClick"
@@ -249,11 +251,11 @@
         android:textColor="@color/green2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.538"
-        app:rippleColor="#FFFFFF"
+        app:layout_constraintVertical_bias="0.539"
+        app:backgroundTint="@color/green4"
         tools:ignore="OnClick" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
