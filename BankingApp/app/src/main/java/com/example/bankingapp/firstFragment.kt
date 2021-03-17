@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.navigation.Navigation
@@ -41,6 +42,12 @@ class firstFragment : Fragment() {
         val root = inflater.inflate(R.layout.fragment_first, container, false)
 
         val imageButton2 = root.findViewById<View>(R.id.imageButton2) as ImageButton
+
+        val button5 = root.findViewById<View>(R.id.button5) as Button
+
+        button5.setOnClickListener {
+            Toast.makeText(activity,"Bank Statement Download Complete",Toast.LENGTH_SHORT).show()
+        }
 
         imageButton2.setOnClickListener {
             view?.let { it1 -> Navigation.findNavController(it1).navigate(R.id.action_firstFragment_to_secondFragment) }

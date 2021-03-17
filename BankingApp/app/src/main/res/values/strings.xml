@@ -4,4 +4,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="first_fragment">First Fragment</string>
     <string name="user_name">Mr John Smith</string>
+
+    <string-array name="accountType">
+        <item> Current </item>
+    </string-array>
+
 </resources>

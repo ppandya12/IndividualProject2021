@@ -8,20 +8,34 @@
     tools:context=".firstFragment">
 
     <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/ramabhadra"
+        android:text="CAPITAL BANK"
+        android:textColor="@color/grey"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="6dp"
+        android:layout_marginBottom="22dp"
         android:fontFamily="@font/comfortaa"
         android:text="Mr John Smith "
         android:textAlignment="center"
         android:textColor="@color/grey"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -246,7 +260,6 @@
         android:backgroundTint="#F0F3EF"
         android:elevation="8dp"
         android:fontFamily="@font/comfortaa_bold"
-        android:onClick="onClick"
         android:text="Download latest Bank Statement"
         android:textColor="@color/green2"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -255,7 +268,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.539"
-        app:backgroundTint="@color/green4"
-        tools:ignore="OnClick" />
+        app:backgroundTint="@color/green4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
