@@ -60,21 +60,20 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-                <AutoCompleteTextView
-                    android:id="@+id/autoCompleteTextView4"
-                    android:layout_width="283dp"
-                    android:layout_height="52dp"
-                    android:layout_weight="1"
-                    android:inputType="none"
-                    android:text="Mother" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="  Choose account"
+                    android:textColor="@color/grey"
+                    android:textSize="20sp" />
+            </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -105,6 +104,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/comfortaa_bold"
                 android:text="Enter Amount Below"
+                android:textAlignment="center"
                 android:textColor="@color/grey"
                 android:textSize="20dp" />
 
@@ -136,12 +136,13 @@
 
             <RadioButton
                 android:id="@+id/radioButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="255dp"
+                android:layout_height="59dp"
+                android:buttonTint="@color/green2"
                 android:fontFamily="@font/comfortaa_bold"
                 android:text="One Time Payment "
+                android:textAlignment="gravity"
                 android:textColor="@color/grey"
-                android:buttonTint="@color/green2"
                 android:textSize="16sp" />
 
         </LinearLayout>
