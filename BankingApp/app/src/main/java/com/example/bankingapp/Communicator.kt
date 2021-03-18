@@ -1,4 +1,5 @@
 package com.example.bankingapp
 
-class Communicator {
+interface Communicator {
+    fun passDataCom(editTextInput : String)
 }

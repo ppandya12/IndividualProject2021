@@ -1,14 +1,16 @@
 package com.example.bankingapp
 
-import android.content.Intent
+import android.app.Activity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageButton
-import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
+import androidx.navigation.Navigation
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -21,7 +23,7 @@ private const val ARG_PARAM2 = "param2"
  * Use the [fourthFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class fourthFragment : Fragment() {
+class fourthFragment : Fragment(){
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -32,28 +34,39 @@ class fourthFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
-        requireActivity().title = "test"
 
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater, container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
 
         val v = inflater.inflate(R.layout.fragment_fourth, container, false)
+        //val fm: FragmentManager = (getContext as Activity).getSupportFragmentManager()
 
+        val settingbtn = v.findViewById<View>(R.id.settingbtn) as ImageButton
 
-        //val settingbtn = v.findViewById<View>(R.id.settingbtn) as ImageButton
+        /*settingbtn.setOnClickListener {
+            val settingsFragment = com.example.bankingapp.settingsFragment
+            val fragmentTransaction: FragmentTransaction = requireActivity().supportFragmentManager.beginTransaction()
 
+            fragmentTransaction.replace(R.id.fourthFragment, settingsFragment)
 
+            fragmentTransaction.addToBackStack(null)
+            fragmentTransaction.commit()
+
+        }*/
+
+        settingbtn.setOnClickListener {
+            view?.let { it2 -> Navigation.findNavController(it2).navigate(R.id.settingsFragment) }
+        }
+
+        return v
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fourth, container, false)
+        //return inflater.inflate(R.layout.fragment_fourth, container, false)
 
     }
-
-
-
 
     companion object {
         /**
@@ -72,6 +85,11 @@ class fourthFragment : Fragment() {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
                 }
+
+
             }
     }
+
+
 }
+

@@ -271,7 +271,7 @@
         android:hapticFeedbackEnabled="true"
         android:text="Download latest Bank Statement"
         android:textColor="@color/green2"
-        app:backgroundTint="@color/green4"
+        app:backgroundTint="#FBFCFC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"

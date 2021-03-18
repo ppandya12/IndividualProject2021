@@ -32,5 +32,15 @@
         android:id="@+id/fourthFragment"
         android:name="com.example.bankingapp.fourthFragment"
         android:label="Help"
-        tools:layout="@layout/fragment_fourth" />
+        tools:layout="@layout/fragment_fourth" >
+        <action
+            android:id="@+id/action_fourthFragment_to_settingsFragment"
+            app:destination="@id/fourthFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.bankingapp.settingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
 </navigation>

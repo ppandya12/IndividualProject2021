@@ -1,12 +1,12 @@
 package com.example.bankingapp
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.ImageButton
+import android.widget.Toast
+import androidx.fragment.app.Fragment
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -30,21 +30,27 @@ class settingsFragment : Fragment() {
             param2 = it.getString(ARG_PARAM2)
         }
 
-        requireActivity().title = "test2"
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater, container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
 
-        val vv = inflater.inflate(R.layout.fragment_settings, container, false)
+        val root = inflater.inflate(R.layout.fragment_settings, container, false)
 
-        val backbtn = vv.findViewById<View>(R.id.backbtn) as Button
+        val button40 = root.findViewById<View>(R.id.button40) as Button
 
+        button40.setOnClickListener {
+            Toast.makeText(activity, "Changes Applied", Toast.LENGTH_LONG).show()
+        }
+
+        return root
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_settings, container, false)
+        //return inflater.inflate(R.layout.fragment_settings, container, false)
     }
+
+
 
     companion object {
         /**
