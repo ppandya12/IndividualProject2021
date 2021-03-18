@@ -73,6 +73,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#FFFFFF"
+                    android:clickable="false"
                     android:src="@drawable/ic_stolencard" />
 
                 <TextView
@@ -110,6 +111,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#FFFFFF"
+                    android:clickable="false"
                     android:src="@drawable/ic_service" />
 
                 <TextView
@@ -125,6 +127,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/settingsCard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="1"
@@ -144,9 +147,12 @@
                 android:orientation="vertical">
 
                 <ImageButton
+                    android:id="@+id/settingbtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#FFFFFF"
+                    android:clickable="true"
+                    android:hapticFeedbackEnabled="true"
                     android:src="@drawable/ic_settings" />
 
                 <TextView
@@ -184,6 +190,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#FFFFFF"
+                    android:clickable="false"
                     android:src="@drawable/ic_fraud" />
 
                 <TextView
@@ -222,6 +229,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#FFFFFF"
+                    android:clickable="false"
                     android:src="@drawable/ic_covid" />
 
                 <TextView
@@ -260,6 +268,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#FFFFFF"
+                    android:clickable="false"
                     android:src="@drawable/ic_spending" />
 
                 <TextView

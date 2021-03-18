@@ -60,20 +60,38 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
                 <TextView
                     android:id="@+id/textView33"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/comfortaa_bold"
-                    android:text="  Choose account"
+                    android:text=" Account "
                     android:textColor="@color/grey"
                     android:textSize="20sp" />
-            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:clickable="true"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/comfortaa_bold"
+                android:text=" To "
+                android:textColor="@color/grey"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:clickable="true"
+                android:textSize="20sp" />
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -136,10 +154,12 @@
 
             <RadioButton
                 android:id="@+id/radioButton"
-                android:layout_width="255dp"
+                android:layout_width="match_parent"
                 android:layout_height="59dp"
                 android:buttonTint="@color/green2"
+                android:clickable="true"
                 android:fontFamily="@font/comfortaa_bold"
+                android:hapticFeedbackEnabled="true"
                 android:text="One Time Payment "
                 android:textAlignment="gravity"
                 android:textColor="@color/grey"
@@ -149,13 +169,15 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button30"
         android:layout_width="296dp"
         android:layout_height="48dp"
         android:layout_marginTop="44dp"
         android:layout_marginBottom="115dp"
         android:background="@drawable/roundedcorners"
+        android:clickable="true"
         android:fontFamily="@font/comfortaa_bold"
+        android:hapticFeedbackEnabled="true"
         android:text="Complete transfer"
         android:textColor="#FFFFFF"
         app:backgroundTint="@color/green2"

@@ -44,7 +44,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#FAF7F7"
-        android:clickable="true"
+        android:clickable="false"
         android:contentDescription="PROFILE"
         android:focusable="true"
         android:src="@drawable/ic_profile"
@@ -121,6 +121,9 @@
                     android:layout_height="66dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/green2"
+                    android:clickable="true"
+                    android:hapticFeedbackEnabled="true"
+                    android:longClickable="true"
                     android:src="@drawable/ic_arrow"
                     android:tint="#FFFFFF" />
 
@@ -180,6 +183,7 @@
                     android:layout_weight="1"
                     android:adjustViewBounds="false"
                     android:background="@drawable/roundedcorners"
+                    android:clickable="false"
                     android:cropToPadding="false"
                     android:scaleType="center"
                     android:src="@drawable/ic_chat"
@@ -193,6 +197,8 @@
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:background="@drawable/roundedcorners"
+                    android:baselineAlignBottom="false"
+                    android:clickable="false"
                     android:src="@drawable/ic_phone"
                     android:tint="#388E3C" />
 
@@ -204,6 +210,7 @@
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:background="@drawable/roundedcorners"
+                    android:clickable="false"
                     android:src="@drawable/ic_mail"
                     android:tint="#388E3C" />
 
@@ -258,16 +265,18 @@
         android:layout_height="54dp"
         android:background="@drawable/roundedcorners"
         android:backgroundTint="#F0F3EF"
+        android:clickable="true"
         android:elevation="8dp"
         android:fontFamily="@font/comfortaa_bold"
+        android:hapticFeedbackEnabled="true"
         android:text="Download latest Bank Statement"
         android:textColor="@color/green2"
+        app:backgroundTint="@color/green4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.539"
-        app:backgroundTint="@color/green4" />
+        app:layout_constraintVertical_bias="0.539" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

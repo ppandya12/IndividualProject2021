@@ -5,7 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.Spinner
 import android.widget.Toast
 
 // TODO: Rename parameter arguments, choose names that match
@@ -32,12 +34,54 @@ class thirdFragment : Fragment() {
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater, container: ViewGroup?,
+            savedInstanceState: Bundle?
     ): View? {
 
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_third, container, false)
+        val root = inflater.inflate(R.layout.fragment_third, container, false)
+
+        val spinner = root.findViewById<View>(R.id.spinner) as Spinner
+        val spinner1 = root.findViewById<View>(R.id.spinner1) as Spinner
+
+        val list: MutableList<String> = ArrayList()
+
+        list.add("Current")
+
+       val list1: MutableList<String> = ArrayList()
+
+        list1.add("Alex")
+        list1.add("James")
+        list1.add("Kevin")
+        list1.add("Mum")
+        list1.add("Dad")
+        list1.add("Jane")
+
+        val adapter = activity?.let {
+            ArrayAdapter<String>(
+                    it,
+                    android.R.layout.simple_spinner_item,
+                    list
+            )
+        }
+
+        val adapter2 = activity?.let {
+            ArrayAdapter<String>(
+                    it,
+                    android.R.layout.simple_spinner_item,
+                    list1
+            )
+        }
+        spinner.adapter = adapter
+        spinner1.adapter = adapter2
+
+        val button30 = root.findViewById<View>(R.id.button30) as Button
+
+        button30.setOnClickListener {
+            Toast.makeText(activity, "Transfer Complete", Toast.LENGTH_LONG).show()
+        }
+
+        return root
     }
 
     companion object {
@@ -52,11 +96,11 @@ class thirdFragment : Fragment() {
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            thirdFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
+                thirdFragment().apply {
+                    arguments = Bundle().apply {
+                        putString(ARG_PARAM1, param1)
+                        putString(ARG_PARAM2, param2)
+                    }
                 }
-            }
     }
 }
