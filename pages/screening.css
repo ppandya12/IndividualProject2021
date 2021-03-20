@@ -13,8 +13,11 @@ h2{
     font-size: 35px;
 }
 
+
 h3{
     color: white;
+    margin: 0;
+    display: inline-block;
     float: right;
     font-family: 'Comfortaa', cursive;
 }
@@ -24,5 +27,14 @@ h4{
     color: black;
     font-family: 'Comfortaa', cursive;
     font-size: 25px;
+}
+
+.lgbtn{
+    float: right;
+    margin-left: 16px;
+}
+
+.lgbtn :hover{
+    background-color: orange;
 }
 
