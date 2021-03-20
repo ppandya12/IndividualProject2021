@@ -1,0 +1,28 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color : black;
+    font-size: 20px;
+}
+
+h2{
+    text-align:center;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+    font-size: 35px;
+}
+
+h3{
+    color: white;
+    float: right;
+    font-family: 'Comfortaa', cursive;
+}
+
+h4{
+    text-align:center;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+    font-size: 25px;
+}
+
