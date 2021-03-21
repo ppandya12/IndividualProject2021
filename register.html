@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&family=Nunito&family=Ramabhadra&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/v4-shims.css">
-    <link href="page1.css" rel="stylesheet">
+    <link href="page3.css" rel="stylesheet">
     <link href="stylesheet.css" rel="stylesheet">
 
     <title>Banking Website</title>
@@ -23,11 +23,11 @@
     <!-- Custom styles for this template -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
-
 <body>
+
 <header>
     <!-- Main Navbar - fixed -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark p-md-3">
         <div class="container">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
                 <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@
                 <div class="mx-auto"></div>
                 <ul class="navbar-nav">
                     <li class="nav-item px-2" >
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown px-2">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -130,130 +130,149 @@
                     </ul>
                 </div>
                 <div class="btn-group mx-1" role="group" aria-label="Basic">
-                    <button type="button" class="btn btn-outline-light"><a style="color: whitesmoke" href="#">Register</a></button>
+                    <button type="button" class="btn btn-outline-light "><a style="color: whitesmoke" href="#">Register</a></button>
                 </div>
             </div>
         </div>
     </nav>
-
-
-    <!-- Banner Image -->
-    <div
-            class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center"
-    >
-        <div class="position-relative">
-            <h1><b>Personal Banking</b></h1>
-            <h3> Build a better relationship with your money. <br> We have a variety of different personal accounts, find the one best suited for you </h3>
-            <button type="button" class="btn btn-success rounded-pill btn-lg">Find out More</button>
-        </div>
-    </div>
-
 </header>
 
 <main role="main">
 
-    <!-- Horizontal line which divides up the webpage - makes it more structured  -->
-    <hr style="height:7px; color:darkgreen">
+    <!-- Page title -->
+    <h1 style="margin-top: 100px; color: black; text-align: center"> <b>Register </b></h1>
 
-
-    <!-- Column of Links -->
     <div class="container">
-        <h2 style = "text-align: center; color: darkgreen;"><u><b>Products</b></u></h2><br>
-        <div class="row">
-            <div class=" col-sm">
-                <h5><u>Current Account</u></h5></br>
-                <d href="#" class="col-text">Types of current accounts<span class="pr-2 fas fa-angle-right"></span></d></br></br>
-                <d href="#" class="col-text">Compare current accounts<span class="pr-2 fas fa-angle-right"></span></d></br></br>
-                <d href="#" class="col-text">Change to Capital Bank<span class="pr-2 fas fa-angle-right"></span></d>
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-6">
+                <label for="validationCustom01" class="form-label">First name</label>
+                <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
             </div>
-            <div class="col-sm">
-                <h5><u>Credit Cards</u></h5></br>
-                <d href="#" class="col-text">All in one Credit Card<span class="pr-2 fas fa-angle-right"></span></d></br></br>
-                <d href="#" class="col-text">Everyday Credit Card<span class="pr-2 fas fa-angle-right"></span></d></br></br>
-                <d href="#" class="col-text">Zero credit Credit Card<span class="pr-2 fas fa-angle-right"></span></d>
+            <div class="col-md-6">
+                <label for="validationCustom02" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
             </div>
-            <div class="col-sm">
-                <h5><u>Mortgage</u></h5></br>
-                <d href="#" class="col-text">Mortgage calculator<span class="pr-2 fas fa-angle-right"></span></d></br></br>
-                <d href="#" class="col-text">First time buyers<span class="pr-2 fas fa-angle-right"></span></d></br></br>
-                <d href="#" class="col-text">All mortgages<span class="pr-2 fas fa-angle-right"></span></d>
+            <div class="col-md-6">
+                <label for="validationCustom08" class="form-label">Email</label>
+                <input type="email" class="form-control" id="validationCustom08" required>
+                <div class="invalid-feedback">
+                    Please provide an email.
+                </div>
             </div>
-            <div class="col-sm">
-                <h5><u>Insure</u></h5></br>
-                <d href="#" class="col-text">Home Insurance<span class="pr-2 fas fa-angle-right"></span></d></br></br>
-                <d href="#" class="col-text">Life Insurance<span class="pr-2 fas fa-angle-right"></span></d></br></br>
-                <d href="#" class="col-text">Travel Insurance<span class="pr-2 fas fa-angle-right"></span></d>
+            <div class="col-md-6">
+                <label for="validationCustom05" class="form-label">Re-enter email</label>
+                <input type="email" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                    Please re-enter email.
+                </div>
             </div>
-        </div>
+            <div class="col-md-6">
+                <label for="validationCustom06" class="form-label">Password</label>
+                <input type="password" class="form-control" id="validationCustom06" required>
+                <div class="invalid-feedback">
+                    Please provide an password.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom07" class="form-label">Re-enter Password</label>
+                <input type="password" class="form-control" id="validationCustom07" required>
+                <div class="invalid-feedback">
+                    Please repeat password.
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label for="validationCustom09" class="form-label">Address </label>
+                <input type="text" class="form-control" id="validationCustom09" required>
+                <div class="invalid-feedback">
+                    Please provide a valid address.
+                </div>
+            </div>
+            <div class="col-md-12">
+                <label for="validationCustom04" class="form-label">Address 2 </label>
+                <input type="text" class="form-control" id="validationCustom04" required>
+                <div class="invalid-feedback">
+                    Please provide a valid address.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">City</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                    Please provide a valid city.
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <h4 style="text-align: left">Account</h4>
+
+            <div class="col-md-6">
+                <label for="validationCustom10" class="form-label">Account Type</label>
+                <select class="form-select" id="validationCustom10" required>
+                    <option selected> Current</option>
+                    <option>Mortgage</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select an account
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom11" class="form-label">Sort Code</label>
+                <input type="text" class="form-control" id="validationCustom11" required>
+                <div class="invalid-feedback">
+                    Please provide a sort code
+                </div>
+            </div><
+            <div class="col-md-6">
+                <label for="validationCustom12" class="form-label">Card Number</label>
+                <input type="text" class="form-control" id="validationCustom12" required>
+                <div class="invalid-feedback">
+                    Please provide a card number
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Register</button>
+            </div>
+        </form>
     </div>
 
-    <!-- Horizontal line which divides up the webpage -->
-    <hr style="height:7px; color:darkgreen">
-
-        <!-- Card displaying information -->
-        <div class="bank-card py-5 bg-light">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card mb-4 box-shadow align-items-center">
-                        <h4 class="card-title">Online Banking</h4>
-                        <h2><i class="fas fa-laptop fa-3x"></i></h2>
-                        <div class="card-body">
-                            <p class="card-text">Manage your money remotely</p>
-                            <button type="button" class="btn btn-success rounded-pill">Find out more</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card mb-4 box-shadow align-items-center">
-                        <h4 class="card-title">Get the App</h4>
-                        <h2><i class="fas fa-mobile-alt fa-3x"></i></h2>
-                        <div class="card-body">
-                            <p class="card-text">Download our new app</p>
-                            <button type="button" class="btn btn-success rounded-pill">Find out more</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card mb-4 box-shadow align-items-center">
-                        <h4 class="card-title">Chat with Us</h4>
-                        <h2><i class="fas fa-comments fa-3x"></i></h2>
-                        <div class="card-body">
-                            <p class="card-text">Our team is available 24/7 </p>
-                            <button type="button" class="btn btn-success rounded-pill">Find out more</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card mb-4 box-shadow align-items-center">
-                        <h4 class="card-title">Covid-19 Updates</h4>
-                        <h2><i class="fas fa-shield-virus fa-3x"></i></h2>
-                        <div class="card-body">
-                            <p class="card-text">New covid rules and regulations </p>
-                            <button type="button" class="btn btn-success rounded-pill">Find out more</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Horizontal line which divides up the webpage-->
-    <hr style="height:7px; color:darkgreen">
-
-    <!-- Information section -->
-    <div class="container">
-        <h4><b>Important Information</b></h4>
-            <p> 1. You must be 16 years or older to be able to use the Capital Bank app. Terms and Conditions Apply. <br>
-                <br>
-            2. We may monitor or record telephone calls to check out your instructions correctly and to help us improve the quality of our service.
-            Calls from abroad are charged according to the telephone service provider’s published tariff.
-        </p>
-    </div>
-
-    <!-- Horizontal line which divides up the webpage -->
-    <hr style="height:7px; color:darkgreen">
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
 
     <!-- Java Script for the responsive nav bar -->
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -266,55 +285,33 @@
             if (window.pageYOffset > 100) {
                 nav.classList.add('bg-dark', 'shadow', 'navMarginTop-0');
             } else {
-                nav.classList.remove('bg-dark', 'shadow', 'navMarginTop-0');
+                nav.classList.remove('shadow', 'navMarginTop-0');
             }
         });
+
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+
+
     </script>
 </main>
-
-<!-- Footer -->
-<footer class="container">
-    <div class="container">
-        <div class="row align-items-start">
-            <div class="col-md">
-                <h6><u>Contact Us</u></h6>
-                <p> Call Us <br>
-                    Email<br>
-                    Live Chat <br>
-                    Branches Near Me
-                </p>
-            </div>
-            <div class="col-md">
-                <h6><u>About Us</u></h6>
-                <p>About Capital Bank <br>
-                    Careers<br>
-                    Security<br>
-                    Accessibility<br>
-                </p>
-            </div>
-            <div class="col-md">
-                <h6><u>Products</u></h6>
-                <p>Current Accounts <br>
-                    Credit Cards <br>
-                    Savings<br>
-                    Mortgages<br>
-                    Loans<br>
-                </p>
-            </div>
-        </div>
-        <!-- Copyright -->
-        <div class="text-center text-white p-1">
-            © 2020-2021 Copyright
-        </div>
-    </div>
-</footer>
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-<script src="../../../../assets/js/vendor/holder.min.js"></script>
 </body>
 </html>

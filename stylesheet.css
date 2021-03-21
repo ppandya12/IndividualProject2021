@@ -4,20 +4,18 @@ body {
 }
 
 h1 {
-    color: ghostwhite;
+     color: ghostwhite;
+     font-family: 'Merriweather Sans', sans-serif;
+     font-family: 'Nunito', sans-serif;
+
+ }
+
+h2 {
+    color: black;
     font-family: 'Merriweather Sans', sans-serif;
     font-family: 'Nunito', sans-serif;
+    text-align: center;
 
-}
-
-h3 {
-    color: ghostwhite;
-    font-family: 'Merriweather Sans', sans-serif;
-    font-family: 'Nunito', sans-serif;
-    letter-spacing: -1px;
-    background: rgb(0, 0, 0); /* fallback color */
-    background: rgba(0, 0, 0, 0.7);
-    padding: 10px;
 }
 
 h4 {
@@ -78,20 +76,13 @@ d:hover{
 }
 
 a:hover {
-    color: gold !important;
-}
-
-a:active {
-    color: gold !important;
-}
-
-c:hover {
     color: yellowgreen !important;
 }
 
-c:active {
-    color: green !important;
+a:active {
+    color: forestgreen !important;
 }
+
 
 .navbar {
     margin-top: 56px;
@@ -114,10 +105,6 @@ c:active {
 .navbar-nav > li > .dropdown-menu { background-color: whitesmoke !important;
 }
 
-.col-md-3{
-
-}
-
 .col-text{
     color: black;
     text-align: left;
@@ -134,7 +121,6 @@ footer {
     font-family: 'Nunito', sans-serif;
     font-size: 15px;
 }
-
 
 .box-shadow {
     box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
