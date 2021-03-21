@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.Toast
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -33,8 +35,18 @@ class thirdFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val root = inflater.inflate(R.layout.fragment_third, container, false)
+
+        val button4 = root.findViewById<View>(R.id.button4) as Button
+
+        button4.setOnClickListener {
+            Toast.makeText(activity,"Promo code applied",Toast.LENGTH_SHORT).show()
+        }
+
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_third, container, false)
+        return root
+        //return inflater.inflate(R.layout.fragment_third, container, false)
     }
 
     companion object {

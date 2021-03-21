@@ -58,13 +58,13 @@ class secondFragment : Fragment() {
         //empty array list
         val list = ArrayList<ExampleItem>()
 
-        list.add(ExampleItem(R.drawable.classic1, "Classic Pizza", "Mozzarella Cheese, Tomato Sauce"))
+        list.add(ExampleItem(R.drawable.classic1, "Classic Pizza (V)", "Mozzarella Cheese, Tomato Sauce"))
         list.add(ExampleItem(R.drawable.classic3, "Chicken Pizza", "Chicken, Onion, Sweetcorn"))
-        list.add(ExampleItem(R.drawable.classic4, "Veggie Dream Pizza", "Courgette, Peppers, Artichoke, Aubergine"))
+        list.add(ExampleItem(R.drawable.classic4, "Veggie Dream Pizza (V)", "Courgette, Peppers, Artichoke, Aubergine"))
         list.add(ExampleItem(R.drawable.classic2, "Filthy Steak Pizza", "Steak, Egg, Spinach, Pine nuts"))
         list.add(ExampleItem(R.drawable.meat1, "Farmhouse Pizza", "Chicken, Ham, Olives, Mushrooms"))
         list.add(ExampleItem(R.drawable.chilli, "Spicy Meat Pizza", "Steak, Ham, Chicken, Chili"))
-        list.add(ExampleItem(R.drawable.veg1, "Spicy Veg Pizza", "Tomatoes, Peppers, Mushrooms, Sweetcorn, Chilli"))
+        list.add(ExampleItem(R.drawable.veg1, "Spicy Veg Pizza (V)", "Tomatoes, Peppers, Mushrooms, Sweetcorn, Chilli"))
         list.add(ExampleItem(R.drawable.spicymeat, "Meat Feast Pizza", "Fajita Steak, Chicken, Peppers, Chilli"))
 
         /* for (i in 0 until size) {

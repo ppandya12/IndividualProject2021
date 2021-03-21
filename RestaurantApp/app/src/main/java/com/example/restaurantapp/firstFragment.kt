@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.cardview.widget.CardView
 import androidx.navigation.Navigation
@@ -40,6 +42,12 @@ class firstFragment : Fragment() {
         val root = inflater.inflate(R.layout.fragment_first, container, false)
 
         val cardview5 = root.findViewById<View>(R.id.cardView5) as CardView
+
+        val imageButton = root.findViewById<View>(R.id.imageButton) as ImageButton
+
+        imageButton.setOnClickListener{
+            Toast.makeText(activity,"A waiter has been notified and will arrive shortly ",Toast.LENGTH_SHORT).show()
+        }
 
         cardview5.setOnClickListener {
             view?.let { it1 -> Navigation.findNavController(it1).navigate(R.id.action_firstFragment_to_secondFragment) }
