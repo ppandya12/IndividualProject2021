@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.cardview.widget.CardView
+import androidx.navigation.Navigation
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -33,9 +36,21 @@ class firstFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        val root = inflater.inflate(R.layout.fragment_first, container, false)
+
+        val cardview5 = root.findViewById<View>(R.id.cardView5) as CardView
+
+        cardview5.setOnClickListener {
+            view?.let { it1 -> Navigation.findNavController(it1).navigate(R.id.action_firstFragment_to_secondFragment) }
+        }
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_first, container, false)
+        //return inflater.inflate(R.layout.fragment_first, container, false)
+        return root
     }
+
+
 
     companion object {
         /**
