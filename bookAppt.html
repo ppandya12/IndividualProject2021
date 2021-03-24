@@ -157,32 +157,34 @@
             </div>
             <div class="col-75">
                 <label>Headache</label>
-                <input type="checkbox" id="headache" onclick="myFunction()">
-                <label>Nausea</label>
-                <input type="checkbox" id="nausea" onclick="myFunction()">
-                <label>Lump</label>
-                <input type="checkbox" id="lump" onclick="myFunction()">
-                <label>Sudden weight loss</label>
-                <input type="checkbox" id="weightLoss" onclick="myFunction()">
-                <label>Temperature</label>
-                <input type="checkbox" id="temp" onclick="myFunction()">
-                <label>Body ache</label>
-                <input type="checkbox" id="bodyAche" onclick="myFunction()">
-                <label>Allergies</label>
-                <input type="checkbox" id="allergies" onclick="myFunction()">
-                <label>Sore Throat</label>
-                <input type="checkbox" id="soreThroat" onclick="myFunction()">
-                <label>Other</label>
-                <input type="checkbox" id="other" onclick="myFunction()">
+                    <input type="checkbox" id="headache">
+                    <label>Nausea</label>
+                    <input type="checkbox" id="nausea">
+                    <label>Lump</label>
+                    <input type="checkbox" id="lump">
+                    <label>Weight loss</label>
+                    <input type="checkbox" id="weightLoss">
+                    <label>Temperature</label>
+                    <input type="checkbox" id="temp">
+                    <label>Diarrhoea</label>
+                    <input type="checkbox" id="diarrhoea">
+                    <label>Body ache</label>
+                    <input type="checkbox" id="bodyAche">
+                    <label>Sore Throat</label>
+                    <input type="checkbox" id="soreThroat">
+                    <label>Allergies</label>
+                    <input type="checkbox" id="allergies">
+                    <label>Other</label>
+                    <input type="checkbox" id="other">
                 </select>
             </div>
         </div>
         <div class="row">
             <div class="col-25">
-                <label for="subject">If selected other / any extra information </label>
+                <label for="subject">If selected other/any extra information </label>
             </div>
             <div class="col-75">
-                <textarea id="subject" name="subject" placeholder="Please describe your symptoms here.." style="height:200px;"></textarea>
+                <textarea id="subject" name="subject" placeholder="Please describe your symptoms here or write N/A" style="height:200px;"></textarea>
             </div>
         </div>
         <div class="row">
@@ -226,6 +228,7 @@
         var x = document.forms["apptForm"]["fname"].value;
         var y = document.forms["apptForm"]["lname"].value;
         var z = document.forms["apptForm"]["telephone"].value;
+        var a = document.forms["apptForm"]["subject"].value;
 
         var errormessage = "";
 
@@ -242,6 +245,11 @@
        if (z == "" || z == null) {
            errormessage += "telephone field empty\n";
             document.getElementById('telephone').style.borderColor = "red";
+        }
+
+        if (a == "" || a == null) {
+            errormessage += "symptoms description field empty\n";
+            document.getElementById('subject').style.borderColor = "red";
         }
 
         if (errormessage != "") {

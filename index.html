@@ -17,7 +17,7 @@
 <header>
     <!-- Login Form  -->
     <div class="container">
-        <form action="/action_page.php";>
+        <form action="/action_page.php">
             <label for="fname">Username:</label>
             <input type="text" id="fname" name="fname">
             <label for="lname">Password:</label>
@@ -31,7 +31,7 @@
 
     <!-- Navbar with icons  -->
     <div class="navigation">
-        <a class="active" href="#">Home <i class="fa fa-fw fa-home"></i></a>
+        <a class="active" href="index.html">Home <i class="fa fa-fw fa-home"></i></a>
 
         <div class="dropdown">
             <button class="dropbutton">Appointments
@@ -194,34 +194,35 @@
         </div>
     <hr>
 
-    <!-- Footer  -->
-    <footer>
-        <div class="row">
-            <div class="column">
-                <h3><u>The Team</u></h3>
-                <p>Doctors <br><br>
-                    Nurses <br><br>
-                    Reception and admin
-                </p>
-            </div>
-            <div class="column">
-                <h3><u>Contact Us</u></h3>
-                <p>45 Greenhouse Way, <br>
+<!-- Footer  -->
+<footer style="color: #f2f2f2">
+    <div class="row">
+        <div class="column">
+            <span style="font-size: 20px"><u><b>The Team</b></u></span>
+            <p>Doctors <br><br>
+                Nurses <br><br>
+                Reception and admin
+            </p>
+        </div>
+        <div class="column">
+            <span style="font-size: 20px"><u><b>Contact Us</b></u></span>
+            <p>45 Greenhouse Way, <br>
                 Surrey TW20 8YT <br><br>
                 <a href="englefieldmedcentre@nhsemails.com">englefieldmedcentre@nhsemails.com</a> <br><br>
                 (+44)78345234321
             </p>
-            </div>
-            <div class="column">
-                <h3><u>Services</u></h3>
-                <p>Screenings <br><br>
+        </div>
+        <div class="column">
+            <span style="font-size: 20px"><u><b>Services</b></u></span>
+            <p>Screenings <br><br>
                 Men's Health <br><br>
                 Women's Health <br><br>
                 Children's Health
-                </p>
-            </div>
+            </p>
         </div>
-    </footer>
+    </div>
+</footer>
+
 
     <script>
         function check(form)/*function to check userid & password*/
@@ -289,6 +290,7 @@
             if (currentTab >= x.length) {
                 //...the form gets submitted:
                 document.getElementById("regForm").submit();
+                confirm('request sent');
                 return false;
             }
             // Otherwise, display the correct tab:
