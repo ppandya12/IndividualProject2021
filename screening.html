@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
 <header>
     <!-- Shows patients name once logged in -->
 
@@ -94,7 +95,7 @@
 
         <!-- Search bar  -->
         <form action="/action_page.php">
-            <input type="text" placeholder="Search.." name="search">
+            <input type="text" placeholder="Search.." name="search" >
             <button type="submit"><i class="fa fa-search"></i></button>
         </form>
     </div>
@@ -102,7 +103,8 @@
 
 <h2> <u> Screening </u> </h2>
 
-<div class="info" style="text-align: left; padding-left: 100px; padding-right: 100px;">
+<div class="info" style="text-align: left; padding-left: 150px; padding-right: 150px;">
+
 
     <p> Screening is a way in finding out if an individual is at
         risk of a health problem. The earlier screening occur, the quicker we can offer treatment. Our team will support you
@@ -157,12 +159,10 @@
                 treatment, although this is less likely now that most men are offered an MRI scan before further tests
                 and treatment.<br><br>
 
-                Treating prostate cancer in its early stages can be beneficial in some cases, but the side effects of
-                the various treatments are potentially so serious that men may choose to delay treatment until it's
-                absolutely necessary.</p>
+                Treating prostate cancer in its early stages can be beneficial in some cases, but the side effects are
+                potentially so serious that men may choose to delay treatment until it's absolutely necessary.</p>
 
     <hr>
-
 
         <h4> <u>Heart Screening </u> <a name="heartScreening"></a></h4>
             <p>This screening involves the evaluation the heart structures by the use of ultrasound, or high frequency sound wave,
@@ -212,6 +212,31 @@
         </div>
     </div>
 </footer>
+
+<script>
+
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+
 
 </body>
 </html>
