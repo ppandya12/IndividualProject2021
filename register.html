@@ -129,7 +129,7 @@
                     </ul>
                 </div>
                 <div class="btn-group mx-1" role="group" aria-label="Basic">
-                    <button type="button" class="btn btn-outline-light "><a style="color: whitesmoke" href="#">Register</a></button>
+                    <button type="button" class="btn btn-outline-light "><a style="color: whitesmoke" href="register.html">Register</a></button>
                 </div>
             </div>
         </div>
@@ -139,22 +139,23 @@
 <main role="main">
 
     <!-- Page title -->
-    <h1 style="margin-top: 100px; color: black; text-align: center"> <b>Register </b></h1>
+    <h1 style="margin-top: 100px; margin-bottom: 20px; color: black; text-align: center"> Register </h1>
 
+    <!-- Register form -->
     <div class="container">
         <form class="row g-3 needs-validation" novalidate>
             <div class="col-md-6">
                 <label for="validationCustom01" class="form-label">First name</label>
-                <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-                <div class="valid-feedback">
-                    Looks good!
+                <input type="text" class="form-control" id="validationCustom01"  required>
+                <div class="invalid-feedback">
+                    Please enter first name.
                 </div>
             </div>
             <div class="col-md-6">
                 <label for="validationCustom02" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                <div class="valid-feedback">
-                    Looks good!
+                <input type="text" class="form-control" id="validationCustom02" required>
+                <div class="invalid-feedback">
+                    Please enter last name.
                 </div>
             </div>
             <div class="col-md-6">
@@ -209,6 +210,7 @@
 
             <hr>
 
+            <!-- Subheading in Form -->
             <h4 style="text-align: left">Account</h4>
 
             <div class="col-md-6">
