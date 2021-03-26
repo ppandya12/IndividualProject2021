@@ -26,7 +26,7 @@
 
 <body>
 <header>
-    <!-- Main Navbar - fixed -->
+    <!-- Main Navbar - fixed top-->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
         <div class="container">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
@@ -141,6 +141,7 @@
     <div
             class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center"
     >
+        <!-- Message on Banner Image - showing the current client services page -->
         <div class="position-relative">
             <h1><b>Personal Banking</b></h1>
             <h3> Build a better relationship with your money. <br> We have a variety of different personal accounts, find the one best suited for you </h3>
@@ -156,7 +157,7 @@
     <hr style="height:7px; color:darkgreen">
 
 
-    <!-- Column of Links -->
+    <!-- Column of Links (of products) -->
     <div class="container">
         <h2 style = "text-align: center; color: darkgreen;"><u><b>Products</b></u></h2><br>
         <div class="row">
@@ -226,7 +227,7 @@
                         <div class="card-body">
                             <p class="card-text">Our team is available 24/7 </p>
                             <div class="text-center">
-                            <button type="button" class="btn btn-success rounded-pill"> Find out more</button>
+                            <button type="button" class="btn btn-success rounded-pill" onclick=location.href='contactUs.html'> Find out more</button>
                             </div>
                         </div>
                     </div>
@@ -270,6 +271,7 @@
         //makes the top fixed nav bar black when the user scroll down on the webpage
         var nav = document.querySelector('nav');
 
+        //when user scrolls the second nav bar will move to the top and become solid black from transparent
         window.addEventListener('scroll', function () {
             if (window.pageYOffset > 100) {
                 nav.classList.add('bg-dark', 'shadow', 'navMarginTop-0');

@@ -167,7 +167,7 @@
     <!-- Horizontal line which divides up the webpage - makes it more structured  -->
     <hr style="height:7px; color:darkgreen">
 
-    <!-- Card displaying information -->
+    <!-- Card displaying contact information -->
     <div class="bank-card py-5 bg-light">
         <div class="container">
             <h3 style="margin-bottom:30px"><b>Ways to Contact Us</b></h3>
@@ -232,10 +232,11 @@
     <!-- Horizontal line which divides up the webpage-->
     <hr style="height:7px; color:darkgreen">
 
-    <!-- Information section -->
+    <!-- Frequently asked questions section -->
     <div class="container">
         <h4><b>Frequently Asked Questions</b></h4>
 
+        <!-- Accordion consisting of questions wand answers-->
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
@@ -291,6 +292,7 @@
         //makes the top fixed nav bar black when the user scroll down on the webpage
         var nav = document.querySelector('nav');
 
+        //when user scrolls the second nav bar will move to the top
         window.addEventListener('scroll', function () {
             if (window.pageYOffset > 100) {
                 nav.classList.add('bg-dark', 'shadow', 'navMarginTop-0');

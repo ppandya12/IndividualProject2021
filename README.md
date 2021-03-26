@@ -23,10 +23,14 @@ Tasks users would be able to carry out (Functionality):
 - Search on the website 
 
 # Visuals 
-- screenshots or video link?
+video link?
 
-# Installation 
-
+# Installation / How to Use 
+From the Git Hub repository select the BankingWebsite Branch. Then click the index.html file. This will load the main 
+homepage. When navigating on the website, you can select the register button in the top right hand corner which will 
+take you to a registration form (responsive). On the navigation bar when hovering over the support dropdown heading, 
+by clicking contact us, you will visit the Contact Us page. You can also access this page by scrolling down on the home
+page and clicking the 'find out more button' on the chat with us card. 
 
 
 # Contributing 
