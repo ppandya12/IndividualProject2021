@@ -2,25 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name = "viewport" content ="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="screening.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="screening.css" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Raleway&display=swap"
+          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Englefield Medical Centre</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link href="stylesheet.css" rel="stylesheet">
 </head>
 <body>
 <!-- Button which scrolls to the top of the page - it appears once user scrolls down on the page -->
-<button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+<button id="topButton" onclick="topFunction()" title="Go to top">Back to top</button>
 <header>
     <!-- Logout button -->
     <div id="logout">
-        <button type="button" class="lgbtn btn-default btn-sm" onclick=location.href='index.html'>
-            <span class="fa fa-sign-out"></span>Log out</button>
+        <button class="lgbtn btn-default btn-sm" onclick=location.href='index.html'; type="button">
+            <span class="fa fa-sign-out"></span>Log out
+        </button>
     </div>
 
     <!-- Shows patients name once logged in -->
@@ -44,7 +46,6 @@
                 <a href="#">Cancel Appointment</a>
             </div>
         </div>
-
         <div class="dropdown">
             <button class="dropbutton">Prescriptions
                 <i class="fa fa-fw fa-file-text-o"></i>
@@ -56,20 +57,18 @@
                 <a href="#">Prescription Cost</a>
             </div>
         </div>
-
         <div class="dropdown">
             <button class="dropbutton">Opening Times
                 <i class="fa fa-fw fa-clock-o"></i>
             </button>
             <div class="dropdown-content">
-                <a href ="#">
+                <a href="#">
                     <p> Monday - Friday : 8am - 5pm <br>
                         Saturday : 10am - 3pm<br>
                         Sunday : Closed </p>
                 </a>
             </div>
         </div>
-
         <div class="dropdown">
             <button class="dropbutton">New Patients
                 <i class="fa fa-fw fa-user-plus"></i>
@@ -80,7 +79,6 @@
                 <a href="#">Temporary visitors</a>
             </div>
         </div>
-
         <div class="dropdown">
             <button class="dropbutton">Services
                 <i class="fa fa-plus-square"></i>
@@ -96,20 +94,22 @@
 
         <!-- Search bar  -->
         <form action="/action_page.php">
-            <input type="text" placeholder="Search.." name="search" >
+            <input name="search" placeholder="Search.." type="text">
             <button type="submit"><i class="fa fa-search"></i></button>
         </form>
     </div>
 </header>
 
-<h2> <u> Screening </u> </h2>
+<h2><u> Screening </u></h2>
 
 <div class="info" style="text-align: left; padding-left: 150px; padding-right: 150px;">
 
 
     <p> Screening is a way in finding out if an individual is at
-        risk of a health problem. The earlier screening occur, the quicker we can offer treatment. Our team will support you
-        through the entire process and will ensure that you are in a comfortable environment. Once the results are obtained
+        risk of a health problem. The earlier screening occur, the quicker we can offer treatment. Our team will support
+        you
+        through the entire process and will ensure that you are in a comfortable environment. Once the results are
+        obtained
         an informed decision will be made in what the next steps will be. We aim to get the results back to you within a
         week. If you experience any issues please get in touch with us.<br><br>
 
@@ -123,70 +123,88 @@
     <!-- Horizontal line - divides up the page to show clear sections  -->
     <hr>
 
-        <h4> <u>Breast Cancer Screening </u> <a name="breastScreening"></a></h4>
-            <p> This screening is offered to women aged 50 to 70 to detect early signs of breast cancer. Women over 70 can self-refer.
-            About 1 in 8 women in the UK are diagnosed with breast cancer during their lifetime. If it's detected early, treatment
-            is more successful and there's a good chance of recovery.<br><br>
+    <h4><u>Breast Cancer Screening </u> <a name="breastScreening"></a></h4>
+    <p> This screening is offered to women aged 50 to 70 to detect early signs of breast cancer. Women over 70 can
+        self-refer.
+        About 1 in 8 women in the UK are diagnosed with breast cancer during their lifetime. If it's detected early,
+        treatment
+        is more successful and there's a good chance of recovery.<br><br>
 
-            Breast screening aims to find breast cancers early. It uses an X-ray test called a mammogram that can spot cancers when
-            they're too small to see or feel.<br><br>
+        Breast screening aims to find breast cancers early. It uses an X-ray test called a mammogram that can spot
+        cancers when
+        they're too small to see or feel.<br><br>
 
-            If you're worried about breast cancer symptoms, such as a lump or an area of thickened tissue in a breast, or you notice
-                that your breasts look or feel different from what's normal for you, do not wait to be offered screening, see a GP. </p>
-
-    <!-- Horizontal line - divides up the page to show clear sections  -->
-        <hr>
-
-        <h4> <u>Bowel Cancer Screening </u> <a name="bowelScreening"></a></h4>
-            <p>Everyone aged 60 to 74 is offered a bowel cancer screening home test kit every 2 years.<br><br>
-
-            If you're 75 or over, you can ask for a kit every 2 years by phoning the free bowel cancer screening helpline on
-            0800 707 60 60.<br><br>
-
-            Regular bowel cancer screening reduces the risk of dying from bowel cancer.
-
-            Bowel cancer is a common type of cancer. Screening can help find it at an early stage, when it's easier to treat.<br><br>
-
-            <b><u>Bowel scope screening</u></b><br>
-            Previously, some people aged 55 were invited for a test where a healthcare professional uses a tube with a camera to
-            look inside the bowel. This is called bowel scope screening.<br>
-
-            Bowel scope screening is no longer offered. If you were invited for this test but have not had it because it was delayed
-            due to coronavirus, you will be sent a home test kit from April 2021.</p>
+        If you're worried about breast cancer symptoms, such as a lump or an area of thickened tissue in a breast, or
+        you notice
+        that your breasts look or feel different from what's normal for you, do not wait to be offered screening, see a
+        GP. </p>
 
     <!-- Horizontal line - divides up the page to show clear sections  -->
     <hr>
 
-        <h4> <u>Prostate Cancer Screening </u> <a name="prostateScreening"></a></h4>
-            <p>The PSA test can find aggressive prostate cancer that needs treatment, but it can also find slow-growing
-                cancer that may never cause symptoms or shorten life. Some men may face difficult decisions about
-                treatment, although this is less likely now that most men are offered an MRI scan before further tests
-                and treatment.<br><br>
+    <h4><u>Bowel Cancer Screening </u> <a name="bowelScreening"></a></h4>
+    <p>Everyone aged 60 to 74 is offered a bowel cancer screening home test kit every 2 years.<br><br>
 
-                Treating prostate cancer in its early stages can be beneficial in some cases, but the side effects are
-                potentially so serious that men may choose to delay treatment until it's absolutely necessary.</p>
+        If you're 75 or over, you can ask for a kit every 2 years by phoning the free bowel cancer screening helpline on
+        0800 707 60 60.<br><br>
+
+        Regular bowel cancer screening reduces the risk of dying from bowel cancer.
+
+        Bowel cancer is a common type of cancer. Screening can help find it at an early stage, when it's easier to
+        treat.<br><br>
+
+        <b><u>Bowel scope screening</u></b><br>
+        Previously, some people aged 55 were invited for a test where a healthcare professional uses a tube with a
+        camera to
+        look inside the bowel. This is called bowel scope screening.<br>
+
+        Bowel scope screening is no longer offered. If you were invited for this test but have not had it because it was
+        delayed
+        due to coronavirus, you will be sent a home test kit from April 2021.</p>
 
     <!-- Horizontal line - divides up the page to show clear sections  -->
     <hr>
 
-        <h4> <u>Heart Screening </u> <a name="heartScreening"></a></h4>
-            <p>This screening involves the evaluation the heart structures by the use of ultrasound, or high frequency sound wave,
-            which creates graphic images of the heart. The primary role of echocardiography in clinical practice is a non-invasive
-            and costeffective answer to the structure and function of the heart muscle and valves. <br><br> There is no preparation required
-            for the test, it takes approximately 20-30 minutes and is painless. <br><br>The Echocardiogram measures the Left Ventricular
-            Ejection Fraction (LVEF) which is a measurement of the percentage of blood leaving your heart each time it contracts.</p>
+    <h4><u>Prostate Cancer Screening </u> <a name="prostateScreening"></a></h4>
+    <p>The PSA test can find aggressive prostate cancer that needs treatment, but it can also find slow-growing
+        cancer that may never cause symptoms or shorten life. Some men may face difficult decisions about
+        treatment, although this is less likely now that most men are offered an MRI scan before further tests
+        and treatment.<br><br>
+
+        Treating prostate cancer in its early stages can be beneficial in some cases, but the side effects are
+        potentially so serious that men may choose to delay treatment until it's absolutely necessary.</p>
 
     <!-- Horizontal line - divides up the page to show clear sections  -->
     <hr>
 
-        <h4> <u>Ultrasound Screening </u> <a name="ultraSound"></a></h4>
-            <p>An ultrasound scan uses very high-frequency soundwaves to create pictures of the inside of your body. Soundwaves are
-            very safe. They don’t cause the same kind of damage as radiation or X-rays. <br><br>The scan is conducted with a special
-            handheld device that will be passed over your skin. The probe or transducer sends out soundwaves and then collects the
-            echoes that bounce back. These echoes are used to create a picture, in the same way that bats use soundwaves to see.
-            The moving pictures will be displayed on a screen in real time. <br><br>Our doctors can look at a
-            particular organ, blood vessel or part of your body. It is even possible to see how well your organs are functioning
-                and how blood is moving along your veins and arteries.</p>
+    <h4><u>Heart Screening </u> <a name="heartScreening"></a></h4>
+    <p>This screening involves the evaluation the heart structures by the use of ultrasound, or high frequency sound
+        wave,
+        which creates graphic images of the heart. The primary role of echocardiography in clinical practice is a
+        non-invasive
+        and costeffective answer to the structure and function of the heart muscle and valves. <br><br> There is no
+        preparation required
+        for the test, it takes approximately 20-30 minutes and is painless. <br><br>The Echocardiogram measures the Left
+        Ventricular
+        Ejection Fraction (LVEF) which is a measurement of the percentage of blood leaving your heart each time it
+        contracts.</p>
+
+    <!-- Horizontal line - divides up the page to show clear sections  -->
+    <hr>
+
+    <h4><u>Ultrasound Screening </u> <a name="ultraSound"></a></h4>
+    <p>An ultrasound scan uses very high-frequency soundwaves to create pictures of the inside of your body. Soundwaves
+        are
+        very safe. They don’t cause the same kind of damage as radiation or X-rays. <br><br>The scan is conducted with a
+        special
+        handheld device that will be passed over your skin. The probe or transducer sends out soundwaves and then
+        collects the
+        echoes that bounce back. These echoes are used to create a picture, in the same way that bats use soundwaves to
+        see.
+        The moving pictures will be displayed on a screen in real time. <br><br>Our doctors can look at a
+        particular organ, blood vessel or part of your body. It is even possible to see how well your organs are
+        functioning
+        and how blood is moving along your veins and arteries.</p>
 
     <!-- Horizontal line - divides up the page to show clear sections  -->
     <hr>
@@ -224,16 +242,19 @@
 <script>
 
     //Get the button
-    var mybutton = document.getElementById("myBtn");
+    var topbutton = document.getElementById("topButton");
 
     // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
+    window.onscroll = function () {
+        scrollFunction()
+    };
 
+    //
     function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
+            topbutton.style.display = "block";
         } else {
-            mybutton.style.display = "none";
+            topbutton.style.display = "none";
         }
     }
 
@@ -243,8 +264,6 @@
         document.documentElement.scrollTop = 0;
     }
 </script>
-
-
 
 </body>
 </html>

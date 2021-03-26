@@ -1,10 +1,10 @@
-header{
+header {
     background-color: dodgerblue;
     padding: 8px 5px;
 }
 
 h1 {
-    text-align:left;
+    text-align: left;
     color: white;
     font-family: 'Comfortaa', cursive;
     padding-left: 10px;
@@ -12,13 +12,13 @@ h1 {
 
 
 .info {
-    text-align:center;
+    text-align: center;
     color: black !important;
     font-family: 'Raleway', sans-serif;
     padding-left: 10px;
 }
 
-h3{
+h3 {
     color: white;
     margin: 0;
     display: inline-block;
@@ -27,12 +27,12 @@ h3{
 }
 
 
-.lgbtn{
+.lgbtn {
     float: right;
     margin-left: 16px;
 }
 
-.lgbtn:hover{
+.lgbtn:hover {
     background-color: orange;
 }
 
@@ -40,7 +40,7 @@ button {
     background-color: mediumblue;
     padding: 5px 15px;
     font-family: 'Raleway', sans-serif;
-    color : ghostwhite;
+    color: ghostwhite;
     border: none;
     border-radius: 15px;
     cursor: pointer;
@@ -48,12 +48,12 @@ button {
 }
 
 .container {
-    float :right;
+    float: right;
     text-align: right;
     color: ghostwhite;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
-    padding : 0px 3px;
+    padding: 0px 3px;
 }
 
 .container input[type=text] {
@@ -76,7 +76,7 @@ button {
     background-color: mediumblue;
     padding: 5px 15px;
     font-family: 'Raleway', sans-serif;
-    color : ghostwhite;
+    color: ghostwhite;
     border: none;
     border-radius: 15px;
     cursor: pointer;
@@ -112,7 +112,7 @@ button {
 }
 
 .navigation .search-container {
-    float:right;
+    float: right;
 }
 
 .navigation input[type=text] {
@@ -164,7 +164,7 @@ button {
     position: absolute;
     background-color: white;
     min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     padding: 12px 16px;
     z-index: 1;
 }
@@ -191,7 +191,7 @@ hr {
     border-radius: 5px;
 }
 
-footer{
+footer {
     background-color: dodgerblue;
 }
 
@@ -220,7 +220,9 @@ footer .row:after {
         width: 100%;
         margin: 0;
         padding: 14px;
-    }    .navigation input[type=text] {
-             border: 1px solid #ccc;
-         }
+    }
+
+    .navigation input[type=text] {
+        border: 1px solid #ccc;
+    }
 }

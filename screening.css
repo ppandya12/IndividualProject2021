@@ -2,18 +2,18 @@ body {
     background-color: white;
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    color : black;
+    color: black;
     font-size: 20px;
 }
 
-h2{
-    text-align:center;
+h2 {
+    text-align: center;
     color: black;
     font-family: 'Comfortaa', cursive;
     font-size: 35px;
 }
 
-h3{
+h3 {
     color: white;
     margin: 0;
     display: inline-block;
@@ -37,25 +37,24 @@ h3{
     padding: 15px;
 }
 
-#myBtn:hover{
+#myBtn:hover {
     background-color: darkorange;
 }
 
 
-
-h4{
-    text-align:center;
+h4 {
+    text-align: center;
     color: black;
     font-family: 'Comfortaa', cursive;
     font-size: 25px;
 }
 
-.lgbtn{
+.lgbtn {
     float: right;
     margin-left: 16px;
 }
 
-.lgbtn:hover{
+.lgbtn:hover {
     background-color: orange;
 }
 

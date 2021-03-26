@@ -2,23 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name = "viewport" content ="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="appt.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="appt.css" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Raleway&display=swap"
+          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Englefield Medical Centre</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link href="stylesheet.css" rel="stylesheet">
 </head>
 <body>
 <header>
     <!-- Logout button -->
     <div id="logout">
-        <button type="button" class="lgbtn btn-default btn-sm" onclick=location.href='index.html'>
-            <span class="fa fa-sign-out"></span>Log out</button>
+        <button class="lgbtn btn-default btn-sm" onclick=location.href='index.html'; type="button">
+            <span class="fa fa-sign-out"></span>Log out
+        </button>
     </div>
 
     <!-- Shows patients name once logged in -->
@@ -60,7 +62,7 @@
                 <i class="fa fa-fw fa-clock-o"></i>
             </button>
             <div class="dropdown-content">
-                <a href ="#">
+                <a href="#">
                     <p> Monday - Friday : 8am - 5pm <br>
                         Saturday : 10am - 3pm<br>
                         Sunday : Closed </p>
@@ -94,16 +96,18 @@
 
         <!-- Search bar  -->
         <form action="/action_page.php">
-            <input type="text" placeholder="Search.." name="search">
+            <input name="search" placeholder="Search.." type="text">
             <button type="submit"><i class="fa fa-search"></i></button>
         </form>
     </div>
 </header>
 
-<h2> <u> Book an Appointment </u> </h2>
+<h2><u> Book an Appointment </u></h2>
 
-<p style="text-align: left; padding-left: 100px; padding-right: 100px;"> Enter your details in the form below with your contact information and symptoms. <br><br>
-    Please  also select a day in which you have the most availability and we will be in touch with you as soon as possible
+<p style="text-align: left; padding-left: 100px; padding-right: 100px;"> Enter your details in the form below with your
+    contact information and symptoms. <br><br>
+    Please also select a day in which you have the most availability and we will be in touch with you as soon as
+    possible
     to discuss any available time slots. Unfortunately due to the current COVID-19 situation we cannot give you specific
     timings as slots are limited and can change depending on an if there are any last minute emergencies <br><br>
     We apologise for any inconveniences and we will aim to contact you within the next 24 hours </p>
@@ -112,13 +116,13 @@
 
 <!-- Booking Form  -->
 <div class="apptForm">
-    <form name="apptForm" action="/action_page.php" onsubmit="return !! validateForm() " method="post" required>
+    <form action="/action_page.php" method="post" name="apptForm" onsubmit="return !! validateForm() " required>
         <div class="row">
             <div class="col-25">
                 <label for="fname">First Name</label>
             </div>
             <div class="col-75">
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <input id="fname" name="firstname" placeholder="Your name.." type="text">
             </div>
         </div>
         <div class="row">
@@ -126,7 +130,7 @@
                 <label for="lname">Last Name</label>
             </div>
             <div class="col-75">
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <input id="lname" name="lastname" placeholder="Your last name.." type="text">
             </div>
         </div>
         <div class="row">
@@ -134,7 +138,7 @@
                 <label for="telephone">Telephone Number</label>
             </div>
             <div class="col-75">
-                <input type="text" id="telephone" placeholder="Your contact number..">
+                <input id="telephone" placeholder="Your contact number.." type="text">
             </div>
         </div>
         <div class="row">
@@ -158,25 +162,25 @@
             </div>
             <div class="col-75">
                 <label>Headache</label>
-                    <input type="checkbox" id="headache">
-                    <label>Nausea</label>
-                    <input type="checkbox" id="nausea">
-                    <label>Lump</label>
-                    <input type="checkbox" id="lump">
-                    <label>Weight loss</label>
-                    <input type="checkbox" id="weightLoss">
-                    <label>Temperature</label>
-                    <input type="checkbox" id="temp">
-                    <label>Diarrhoea</label>
-                    <input type="checkbox" id="diarrhoea">
-                    <label>Body ache</label>
-                    <input type="checkbox" id="bodyAche">
-                    <label>Sore Throat</label>
-                    <input type="checkbox" id="soreThroat">
-                    <label>Allergies</label>
-                    <input type="checkbox" id="allergies">
-                    <label>Other</label>
-                    <input type="checkbox" id="other">
+                <input id="headache" type="checkbox">
+                <label>Nausea</label>
+                <input id="nausea" type="checkbox">
+                <label>Lump</label>
+                <input id="lump" type="checkbox">
+                <label>Weight loss</label>
+                <input id="weightLoss" type="checkbox">
+                <label>Temperature</label>
+                <input id="temp" type="checkbox">
+                <label>Diarrhoea</label>
+                <input id="diarrhoea" type="checkbox">
+                <label>Body ache</label>
+                <input id="bodyAche" type="checkbox">
+                <label>Sore Throat</label>
+                <input id="soreThroat" type="checkbox">
+                <label>Allergies</label>
+                <input id="allergies" type="checkbox">
+                <label>Other</label>
+                <input id="other" type="checkbox">
                 </select>
             </div>
         </div>
@@ -185,7 +189,8 @@
                 <label for="subject">If selected other/any extra information </label>
             </div>
             <div class="col-75">
-                <textarea id="subject" name="subject" placeholder="Please describe your symptoms here or write N/A" style="height:200px;"></textarea>
+                <textarea id="subject" name="subject" placeholder="Please describe your symptoms here or write N/A"
+                          style="height:200px;"></textarea>
             </div>
         </div>
         <div class="row">
@@ -238,13 +243,13 @@
             document.getElementById('fname').style.borderColor = "red";
         }
 
-        if (y == "" || y == null){
+        if (y == "" || y == null) {
             errormessage += "last name field empty\n";
             document.getElementById('lname').style.borderColor = "red";
         }
 
-       if (z == "" || z == null) {
-           errormessage += "telephone field empty\n";
+        if (z == "" || z == null) {
+            errormessage += "telephone field empty\n";
             document.getElementById('telephone').style.borderColor = "red";
         }
 
@@ -256,9 +261,7 @@
         if (errormessage != "") {
             alert(errormessage);
             return false;
-        }
-
-        else{
+        } else {
             return confirm('appointment request sent');
         }
     }
