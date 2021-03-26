@@ -21,7 +21,7 @@ h3 {
     font-family: 'Comfortaa', cursive;
 }
 
-#myBtn {
+#topButton {
     display: none;
     position: fixed;
     bottom: 20px;
