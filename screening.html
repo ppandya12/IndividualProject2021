@@ -100,11 +100,12 @@
     </div>
 </header>
 
+<!-- Page title  -->
 <h2><u> Screening </u></h2>
 
 <div class="info" style="text-align: left; padding-left: 150px; padding-right: 150px;">
 
-
+    <!-- Summary of what the page consists of  -->
     <p> Screening is a way in finding out if an individual is at
         risk of a health problem. The earlier screening occur, the quicker we can offer treatment. Our team will support
         you
@@ -113,6 +114,7 @@
         an informed decision will be made in what the next steps will be. We aim to get the results back to you within a
         week. If you experience any issues please get in touch with us.<br><br>
 
+        <!-- Anchoring -->
         We carry out the following examinations, more information can be found below: <br><br>
         <a href="#breastScreening"> > Breast Cancer Screening</a><br><br>
         <a href="#bowelScreening"> > Bowel Cancer Screening</a><br><br>
@@ -123,6 +125,7 @@
     <!-- Horizontal line - divides up the page to show clear sections  -->
     <hr>
 
+    <!-- Subsection -->
     <h4><u>Breast Cancer Screening </u> <a name="breastScreening"></a></h4>
     <p> This screening is offered to women aged 50 to 70 to detect early signs of breast cancer. Women over 70 can
         self-refer.
@@ -142,6 +145,7 @@
     <!-- Horizontal line - divides up the page to show clear sections  -->
     <hr>
 
+    <!-- Subsection -->
     <h4><u>Bowel Cancer Screening </u> <a name="bowelScreening"></a></h4>
     <p>Everyone aged 60 to 74 is offered a bowel cancer screening home test kit every 2 years.<br><br>
 
@@ -165,6 +169,7 @@
     <!-- Horizontal line - divides up the page to show clear sections  -->
     <hr>
 
+    <!-- Subsection -->
     <h4><u>Prostate Cancer Screening </u> <a name="prostateScreening"></a></h4>
     <p>The PSA test can find aggressive prostate cancer that needs treatment, but it can also find slow-growing
         cancer that may never cause symptoms or shorten life. Some men may face difficult decisions about
@@ -177,6 +182,7 @@
     <!-- Horizontal line - divides up the page to show clear sections  -->
     <hr>
 
+    <!-- Subsection -->
     <h4><u>Heart Screening </u> <a name="heartScreening"></a></h4>
     <p>This screening involves the evaluation the heart structures by the use of ultrasound, or high frequency sound
         wave,
@@ -192,6 +198,7 @@
     <!-- Horizontal line - divides up the page to show clear sections  -->
     <hr>
 
+    <!-- Subsection -->
     <h4><u>Ultrasound Screening </u> <a name="ultraSound"></a></h4>
     <p>An ultrasound scan uses very high-frequency soundwaves to create pictures of the inside of your body. Soundwaves
         are
@@ -244,12 +251,12 @@
     //Get the button
     var topbutton = document.getElementById("topButton");
 
-    // When the user scrolls down 20px from the top of the document, show the button
+    // When the user scrolls down call the scroll function
     window.onscroll = function () {
         scrollFunction()
     };
 
-    //
+    // When the user scrolls down from the top of the page, show the button
     function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             topbutton.style.display = "block";
