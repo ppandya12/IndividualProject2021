@@ -7,29 +7,14 @@
     tools:context=".settingsFragment">
 
     <TextView
-        android:id="@+id/textView35"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:fontFamily="@font/comfortaa_bold"
-        android:text="Settings"
-        android:textColor="@color/grey"
-        android:textSize="36sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/textView34"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="2dp"
+        android:layout_marginTop="6dp"
         android:fontFamily="@font/ramabhadra"
         android:text="CAPITAL BANK"
         android:textColor="@color/grey"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -37,7 +22,6 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
         android:layout_width="379dp"
-        android:backgroundTint="#FBFCFC"
         android:layout_height="324dp"
         android:layout_row="0"
         android:layout_rowWeight="1"
@@ -45,14 +29,14 @@
         android:layout_columnWeight="1"
         android:layout_gravity="fill"
         android:layout_margin="8dp"
+        android:backgroundTint="#FBFCFC"
         app:cardCornerRadius="8dp"
         app:cardElevation="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.393">
+        app:layout_constraintVertical_bias="0.23000002">
 
 
         <LinearLayout
@@ -68,10 +52,10 @@
                 android:backgroundTint="#FBFCFC"
                 android:clickable="true"
                 android:fontFamily="@font/comfortaa_bold"
+                android:hapticFeedbackEnabled="true"
                 android:longClickable="true"
                 android:text="Enable push notifications"
                 android:textColorHighlight="@color/green1"
-                android:hapticFeedbackEnabled="true"
                 android:textSize="20sp"
                 app:backgroundTint="@color/green2"
                 tools:ignore="UseSwitchCompatOrMaterialXml" />
@@ -81,11 +65,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="58dp"
                 android:layout_margin="10dp"
-                android:clickable="true"
                 android:backgroundTint="#FBFCFC"
+                android:clickable="true"
                 android:fontFamily="@font/comfortaa_bold"
-                android:text="Third party permissions"
                 android:hapticFeedbackEnabled="true"
+                android:text="Third party permissions"
                 android:textCursorDrawable="@color/green1"
                 android:textSize="20sp"
                 app:backgroundTint="@color/green2"
@@ -96,8 +80,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="58dp"
                 android:layout_margin="10dp"
-                android:clickable="true"
                 android:backgroundTint="#FBFCFC"
+                android:clickable="true"
                 android:fontFamily="@font/comfortaa_bold"
                 android:hapticFeedbackEnabled="true"
                 android:text="Turn off cookies"
@@ -111,8 +95,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="58dp"
                 android:layout_margin="10dp"
-                android:clickable="true"
                 android:backgroundTint="#FBFCFC"
+                android:clickable="true"
                 android:fontFamily="@font/comfortaa_bold"
                 android:hapticFeedbackEnabled="true"
                 android:text="Digital Receipts"
