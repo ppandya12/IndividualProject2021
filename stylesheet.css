@@ -87,9 +87,6 @@ button {
     background-color: orange;
 }
 
-
-
-
 /* Navigation bar */
 
 .navigation {
@@ -227,5 +224,11 @@ footer .row:after {
 
     .navigation input[type=text] {
         border: 1px solid #ccc;
+    }
+
+    @media screen and (max-width: 500px) {
+        .column {
+            width: 100%;
+        }
     }
 }
