@@ -41,6 +41,12 @@ h3 {
     background-color: darkorange;
 }
 
+button:disabled,
+button[disabled]{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
 
 h4 {
     text-align: center;

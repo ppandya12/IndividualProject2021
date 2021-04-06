@@ -191,6 +191,13 @@ hr {
     border-radius: 5px;
 }
 
+.isDisabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
 footer {
     background-color: dodgerblue;
 }

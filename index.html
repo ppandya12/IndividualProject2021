@@ -40,10 +40,10 @@
                 <i class="fa fa-fw fa-calendar"></i>
             </button>
             <div class="dropdown-content">
-                <a href="#">Book Appointment</a>
-                <a href="#">Telephone Consultation</a>
-                <a href="#">Change Appointment</a>
-                <a href="#">Cancel Appointment</a>
+                <a class="isDisabled" href="#">Book Appointment</a>
+                <a class="isDisabled" href="#">Telephone Consultation</a>
+                <a class="isDisabled" href="#">Change Appointment</a>
+                <a class="isDisabled" href="#">Cancel Appointment</a>
             </div>
         </div>
 
@@ -52,10 +52,10 @@
                 <i class="fa fa-fw fa-file-text-o"></i>
             </button>
             <div class="dropdown-content">
-                <a href="#">New Prescription </a>
-                <a href="#">Repeat Prescriptions</a>
-                <a href="#">Private Prescriptions</a>
-                <a href="#">Prescription Cost</a>
+                <a class="isDisabled"href="#">New Prescription </a>
+                <a class="isDisabled"href="#">Repeat Prescriptions</a>
+                <a class="isDisabled"href="#">Private Prescriptions</a>
+                <a class="isDisabled"href="#">Prescription Cost</a>
             </div>
         </div>
 
@@ -74,12 +74,12 @@
 
         <div class="dropdown">
             <button class="dropbutton">New Patients
-                <i class="fa fa-fw fa-user-plus"></i>
+                <i class="fa fa-fw fa-user-plus" ></i>
             </button>
             <div class="dropdown-content">
-                <a href="#">Registration Forms</a>
-                <a href="#">Overseas Visitors</a>
-                <a href="#">Temporary visitors</a>
+                <a class="isDisabled" href="#">Registration Forms</a>
+                <a class="isDisabled" href="#">Overseas Visitors</a>
+                <a class="isDisabled" href="#">Temporary visitors</a>
             </div>
         </div>
 
@@ -88,18 +88,18 @@
                 <i class="fa fa-plus-square"></i>
             </button>
             <div class="dropdown-content">
-                <a href="#">Screening</a>
-                <a href="#">Minor Surgery</a>
-                <a href="#">Men's Health</a>
-                <a href="#">Women's Health</a>
-                <a href="#">Children's Health</a>
+                <a href="screening.html">Screening</a>
+                <a class="isDisabled" href="#">Minor Surgery</a>
+                <a class="isDisabled" href="#">Men's Health</a>
+                <a class="isDisabled" href="#">Women's Health</a>
+                <a class="isDisabled" href="#">Children's Health</a>
             </div>
         </div>
 
         <!-- Search bar  -->
         <form action="/action_page.php">
             <input name="search" placeholder="Search.." type="text">
-            <button type="submit"><i class="fa fa-search"></i></button>
+            <button type="submit" disabled><i class="fa fa-search"></i></button>
         </form>
     </div>
 </header>
@@ -128,22 +128,22 @@
         <span class="images">
             <img alt="Picture of covid vaccine"
                  src="https://images.unsplash.com/photo-1608326389417-d3f9cc46de04?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1094&q=80"/>
-            <button class="button" style="vertical-align:middle"><span>Covid-19 Vaccine </span></button>
+            <button class="button" style="vertical-align:middle" disabled><span>Covid-19 Vaccine </span></button>
         </span>
     <span class="images">
             <img alt="Picture of telephone"
                  src="https://images.unsplash.com/photo-1519598944665-ff9c7f8abafe?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80"/>
-            <button class="button" style="vertical-align:middle"><span>Phone Consulation</span></button>
+            <button class="button" style="vertical-align:middle" disabled><span>Phone Consulation</span></button>
         </span>
     <span class="images">
             <img alt="Picture of doctor"
                  src="https://images.unsplash.com/photo-1600443299762-7a743123645d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1151&q=80"/>
-            <button style="width: 150px;" class="button" style="vertical-align:middle"><span>Online Booking </span></button>
+            <button id="bookBtn" class="button" style="vertical-align:middle; width: 150px;"><span>Online Booking </span></button>
         </span>
     <span class="images">
             <img alt="Picture of forms"
                  src="https://images.pexels.com/photos/955394/pexels-photo-955394.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
-            <button class="button" style="vertical-align:middle"><span>Register Now </span></button>
+            <button class="button" style="vertical-align:middle" disabled><span>Register Now </span></button>
         </span>
 </div>
 
@@ -344,6 +344,13 @@
         //... and adds the "active" class to the current step:
         x[n].className += " active";
     }
+</script>
+
+//redirect to book appointments page
+<script type="text/javascript">
+    document.getElementById("bookBtn").onclick = function () {
+        location.href='bookAppt.html';
+    };
 </script>
 
 </body>
