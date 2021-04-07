@@ -2,11 +2,9 @@ package com.example.restaurantapp
 
 import android.os.Bundle
 import android.view.*
-import android.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import java.util.*
 import kotlin.collections.ArrayList
 
 
@@ -58,25 +56,14 @@ class secondFragment : Fragment() {
         //empty array list
         val list = ArrayList<ExampleItem>()
 
-        list.add(ExampleItem(R.drawable.classic1, "Classic Pizza (V)", "Mozzarella Cheese, Tomato Sauce"))
-        list.add(ExampleItem(R.drawable.classic3, "Chicken Pizza", "Chicken, Onion, Sweetcorn"))
-        list.add(ExampleItem(R.drawable.classic4, "Veggie Dream Pizza (V)", "Courgette, Peppers, Artichoke, Aubergine"))
-        list.add(ExampleItem(R.drawable.classic2, "Filthy Steak Pizza", "Steak, Egg, Spinach, Pine nuts"))
-        list.add(ExampleItem(R.drawable.meat1, "Farmhouse Pizza", "Chicken, Ham, Olives, Mushrooms"))
-        list.add(ExampleItem(R.drawable.chilli, "Spicy Meat Pizza", "Steak, Ham, Chicken, Chili"))
-        list.add(ExampleItem(R.drawable.veg1, "Spicy Veg Pizza (V)", "Tomatoes, Peppers, Mushrooms, Sweetcorn, Chilli"))
-        list.add(ExampleItem(R.drawable.spicymeat, "Meat Feast Pizza", "Fajita Steak, Chicken, Peppers, Chilli"))
-
-        /* for (i in 0 until size) {
-                val drawable = when (i % 3) {
-                    0 -> R.drawable.classic1
-                    1 -> R.drawable.classic2
-                    2 -> R.drawable.classic3
-                    3 -> R.drawable.classic4
-                    else -> R.drawable.veg1
-                }
-                val item = ExampleItem(drawable, "Item $i", "Line 2")
-                list += item*/
+        list.add(ExampleItem(R.drawable.classic1, "Classic Pizza (V)", "Mozzarella Cheese, Tomato Sauce", "£13.00", R.drawable.ic_add))
+        list.add(ExampleItem(R.drawable.classic3, "Chicken Pizza", "Chicken, Onion, Sweetcorn","£15.00", R.drawable.ic_add ))
+        list.add(ExampleItem(R.drawable.classic4, "Veggie Dream Pizza (V)", "Courgette, Peppers, Artichoke, Aubergine", "£15.00", R.drawable.ic_add))
+        list.add(ExampleItem(R.drawable.classic2, "Filthy Steak Pizza", "Steak, Egg, Spinach, Pine nuts", "£18.00", R.drawable.ic_add))
+        list.add(ExampleItem(R.drawable.meat1, "Farmhouse Pizza", "Chicken, Ham, Olives, Mushrooms", "£16.00", R.drawable.ic_add))
+        list.add(ExampleItem(R.drawable.chilli, "Spicy Meat Pizza", "Steak, Ham, Chicken, Chili", "£16.00", R.drawable.ic_add))
+        list.add(ExampleItem(R.drawable.veg1, "Spicy Veg Pizza (V)", "Tomatoes, Peppers, Mushrooms, Sweetcorn, Chilli", "£15.00", R.drawable.ic_add))
+        list.add(ExampleItem(R.drawable.spicymeat, "Meat Feast Pizza", "Fajita Steak, Chicken, Peppers, Chilli", "£15.00", R.drawable.ic_add))
 
         return list
     }

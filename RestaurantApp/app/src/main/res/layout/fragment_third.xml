@@ -116,6 +116,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:backgroundTint="#FFFFFF"
+                        android:clickable="false"
                         android:src="@drawable/ic_delete" />
 
                 </LinearLayout>
@@ -165,6 +166,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:backgroundTint="#FFFFFF"
+                        android:clickable="false"
                         android:src="@drawable/ic_delete" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -214,6 +216,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:backgroundTint="#FFFFFF"
+                        android:clickable="false"
                         android:src="@drawable/ic_delete" />
 
                 </LinearLayout>

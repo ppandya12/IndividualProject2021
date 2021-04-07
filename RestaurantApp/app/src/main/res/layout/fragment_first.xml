@@ -13,7 +13,7 @@
         android:layout_width="337dp"
         android:layout_height="53dp"
         android:fontFamily="@font/happy_monkey"
-        android:text="Only Pizza's"
+        android:text="Only Pizzas"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#B0000000"
@@ -181,7 +181,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/happy_monkey"
-                                android:text="Any classic pizza and drink for £15" />
+                                android:text="Any pizza for £13" />
                         </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -227,7 +227,7 @@
                                 android:paddingStart="5dp"
                                 android:paddingTop="5dp"
                                 android:paddingEnd="5dp"
-                                android:text="Classic Bundle for 2"
+                                android:text="Bundle for 2"
                                 android:textAlignment="center"
                                 android:textSize="16sp"
                                 android:textStyle="bold" />
@@ -237,7 +237,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/happy_monkey"
-                                android:text="Any 2 classic pizzas and 2 drinks for £25" />
+                                android:text="Any 2 pizzas for £20" />
                         </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -349,7 +349,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/happy_monkey"
-                                android:text="Any 3 classic pizzas and a 1.5l drink for £35"
+                                android:text="Any 3 pizzas for £35"
                                 android:textSize="15sp" />
                         </LinearLayout>
                     </LinearLayout>
