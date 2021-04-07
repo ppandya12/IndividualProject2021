@@ -23,7 +23,8 @@ Tasks users would be able to carry out (Functionality):
 - Search on the website 
 
 # Visuals 
-video link?
+I recorded a video to show how the website works
+https://youtu.be/HNbkf4v7kZo
 
 # Installation / How to Use 
 From the Git Hub repository select the BankingWebsite Branch. Then click the index.html file. This will load the main 
