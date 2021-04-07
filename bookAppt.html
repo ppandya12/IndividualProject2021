@@ -262,7 +262,8 @@
             alert(errormessage);
             return false;
         } else {
-            return confirm('appointment request sent');
+            confirm('appointment request sent');
+            return window.open('bookAppt.html');
         }
     }
 
