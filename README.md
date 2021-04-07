@@ -10,27 +10,28 @@ kind of interface.
 The main HCI issues which I will be focusing on with this interface are; human perception, usability, 
 age/special needs issues and navigation.
 
-Tasks users would be able to carry out (Functionality): 
+Tasks you can carry out on the interface: 
 - Log in to their account 
-- View/Request Prescriptions 
-- Book/Change/Cancel Appointments 
+- Logout of their account
+- Book Appointments 
 - View the medical centres opening times 
-- Access Services 
+- Access Services
+- View Screening information 
 - Contact the centre 
 - Request for a member of the centre to contact them
-- Register with a GP 
 - View Important Updates 
-- Search the website 
+
 
 # Visuals 
 I uploaded a video to show you how the website works and looks.
 https://youtu.be/_Ygp7Bi_wpQ
 
 # Installation/ How to Use 
-On git hub, select the MedicalWebpage branch. Click on index.html, this will lead you to the homepage. By typing in 'john'
-for the username and 'smith' as the password, you will then be signed in (you will see the name john smith appear in the
-top right hand corner). If incorrect, you will be notified of this. On the homepage you can fill in a form if you would like 
-the medical center to contact you. In addition to this, by clicking the book appointments button you will be able to 
+On git hub, select the MedicalWebpage branch. Click on index.html, this will lead you to the homepage. On the homepage 
+you can fill in a form if you would like the medical center to contact you. By typing in 'john' for the username and 
+'smith' as the password, you will then be signed in (you will see the name john smith appear in the top right hand 
+corner). If incorrect, you will be notified of this.  In addition to this, when you scroll down there is a grid of 4 
+images, by clicking the book appointments button under the corresponding image, you will be able to 
 access the book appointments page where you can fill in a form. This page can also be accessed by hovering over 
 'appointments' in the nav bar -  a dropdown will appear, click on 'book Appointment'. 
 
@@ -42,7 +43,6 @@ button is clicked it will take you back to the top of the page without having to
 # Contributing 
 There was only one contributor to this project/interface. 
 
-//tests ? 
 
 # Authors and acknowledgement
 Priyanka Pandya 
