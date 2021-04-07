@@ -42,12 +42,12 @@ class settingsFragment : Fragment() {
 
         val root = inflater.inflate(R.layout.fragment_settings, container, false)
 
-//toast message for switch button
         val switch1 = root.findViewById<View>(R.id.switch1) as Switch
         val switch2 = root.findViewById<View>(R.id.switch2) as Switch
         val switch3 = root.findViewById<View>(R.id.switch3) as Switch
         val switch4 = root.findViewById<View>(R.id.switch4) as Switch
 
+        //toast messages for switch button
         switch1.setOnClickListener {
             Toast.makeText(activity, "Changes Applied", Toast.LENGTH_LONG).show()
         }
@@ -69,8 +69,6 @@ class settingsFragment : Fragment() {
         }
 
         return root
-        // Inflate the layout for this fragment
-        //return inflater.inflate(R.layout.fragment_settings, container, false)
     }
 
 

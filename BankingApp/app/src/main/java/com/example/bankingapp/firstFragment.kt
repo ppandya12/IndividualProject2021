@@ -38,17 +38,18 @@ class firstFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        // Link image button to transactions page
         val root = inflater.inflate(R.layout.fragment_first, container, false)
 
         val imageButton2 = root.findViewById<View>(R.id.imageButton2) as ImageButton
 
         val button5 = root.findViewById<View>(R.id.button5) as Button
 
+        //when button is clicked, toast message appears
         button5.setOnClickListener {
             Toast.makeText(activity,"Bank Statement Download Complete",Toast.LENGTH_SHORT).show()
         }
 
+        //when arrow icon is clicked, redirect user to transaction page
         imageButton2.setOnClickListener {
             view?.let { it1 -> Navigation.findNavController(it1).navigate(R.id.action_firstFragment_to_secondFragment) }
         }

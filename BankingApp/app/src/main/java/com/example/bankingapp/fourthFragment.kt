@@ -43,29 +43,15 @@ class fourthFragment : Fragment(){
     ): View? {
 
         val v = inflater.inflate(R.layout.fragment_fourth, container, false)
-        //val fm: FragmentManager = (getContext as Activity).getSupportFragmentManager()
 
         val settingbtn = v.findViewById<View>(R.id.settingbtn) as ImageButton
 
-        /*settingbtn.setOnClickListener {
-            val settingsFragment = com.example.bankingapp.settingsFragment
-            val fragmentTransaction: FragmentTransaction = requireActivity().supportFragmentManager.beginTransaction()
-
-            fragmentTransaction.replace(R.id.fourthFragment, settingsFragment)
-
-            fragmentTransaction.addToBackStack(null)
-            fragmentTransaction.commit()
-
-        }*/
-
+        //when settings button is clicked redirect to the settings page
         settingbtn.setOnClickListener {
             view?.let { it2 -> Navigation.findNavController(it2).navigate(R.id.settingsFragment) }
         }
 
         return v
-        // Inflate the layout for this fragment
-        //return inflater.inflate(R.layout.fragment_fourth, container, false)
-
     }
 
     companion object {
