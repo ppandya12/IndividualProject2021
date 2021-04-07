@@ -120,6 +120,7 @@
     </div>
 </div>
 
+<!-- Horizontal Line to divide the page  -->
 <hr>
 
 <!-- Shortcut grid of images with buttons leading to frequently used pages  -->
@@ -128,26 +129,28 @@
         <span class="images">
             <img alt="Picture of covid vaccine"
                  src="https://images.unsplash.com/photo-1608326389417-d3f9cc46de04?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1094&q=80"/>
-            <button class="button" style="vertical-align:middle" disabled><span>Covid-19 Vaccine </span></button>
+            <button class="button isDisabled" style="vertical-align:middle" disabled><span>Covid-19 Vaccine </span></button>
         </span>
     <span class="images">
             <img alt="Picture of telephone"
                  src="https://images.unsplash.com/photo-1519598944665-ff9c7f8abafe?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80"/>
-            <button class="button" style="vertical-align:middle" disabled><span>Phone Consulation</span></button>
+            <button class="button isDisabled" style="vertical-align:middle" disabled><span>Phone Consulation</span></button>
         </span>
     <span class="images">
             <img alt="Picture of doctor"
                  src="https://images.unsplash.com/photo-1600443299762-7a743123645d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1151&q=80"/>
-            <button id="bookBtn" class="button" style="vertical-align:middle; width: 150px;"><span>Online Booking </span></button>
+            <button id="bookBtn" class="button" style="vertical-align:middle; width: 150px;" ><span>Online Booking </span></button>
         </span>
     <span class="images">
             <img alt="Picture of forms"
                  src="https://images.pexels.com/photos/955394/pexels-photo-955394.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
-            <button class="button" style="vertical-align:middle" disabled><span>Register Now </span></button>
+            <button class="button isDisabled" style="vertical-align:middle" ><span>Register Now </span></button>
         </span>
 </div>
 
+<!-- Horizontal Line to divide the page  -->
 <hr>
+
 <!-- Form users fill to contact the workers  -->
 <form action="" id="regForm">
 
@@ -194,7 +197,9 @@
 
 </form>
 
+<!-- Horizontal Line to divide the page  -->
 <hr>
+
 <!-- Information section  -->
 <div class="info">
     <h4 style="color:black; font-size: 20px;"><b>Important Updates</b></h4>
@@ -246,7 +251,8 @@
         if (form.fname.value == "john" && form.lname.value == "smith") {
             window.open('loggedIn.html')//opens the target page while Id & password matches
         } else {
-            alert("Error Password or Username")//displays error message*/
+            alert("Error Password or Username"); //error message pops up
+            window.open('index.html')
         }
     }
 
@@ -269,6 +275,7 @@
     }
 
     //javascript for form
+
     var currentTab = 0; // Current tab is set to be the first tab (0)
     showTab(currentTab); // Display the current tab
 

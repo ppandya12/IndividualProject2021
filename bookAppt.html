@@ -31,17 +31,17 @@
 
     <!-- Navbar with icons  -->
     <div class="navigation">
-        <a class="active" href="loggedIn.html">Home <i class="fa fa-fw fa-home"></i></a>
+        <a class="active" href="index.html">Home <i class="fa fa-fw fa-home"></i></a>
 
         <div class="dropdown">
             <button class="dropbutton">Appointments
                 <i class="fa fa-fw fa-calendar"></i>
             </button>
             <div class="dropdown-content">
-                <a href="#">Book Appointment</a>
-                <a href="#">Telephone Consultation</a>
-                <a href="#">Change Appointment</a>
-                <a href="#">Cancel Appointment</a>
+                <a class="isDisabled" href="#">Book Appointment</a>
+                <a class="isDisabled" href="#">Telephone Consultation</a>
+                <a class="isDisabled" href="#">Change Appointment</a>
+                <a class="isDisabled" href="#">Cancel Appointment</a>
             </div>
         </div>
 
@@ -50,10 +50,10 @@
                 <i class="fa fa-fw fa-file-text-o"></i>
             </button>
             <div class="dropdown-content">
-                <a href="#">New Prescription </a>
-                <a href="#">Repeat Prescriptions</a>
-                <a href="#">Private Prescriptions</a>
-                <a href="#">Prescription Cost</a>
+                <a class="isDisabled"href="#">New Prescription </a>
+                <a class="isDisabled"href="#">Repeat Prescriptions</a>
+                <a class="isDisabled"href="#">Private Prescriptions</a>
+                <a class="isDisabled"href="#">Prescription Cost</a>
             </div>
         </div>
 
@@ -72,12 +72,12 @@
 
         <div class="dropdown">
             <button class="dropbutton">New Patients
-                <i class="fa fa-fw fa-user-plus"></i>
+                <i class="fa fa-fw fa-user-plus" ></i>
             </button>
             <div class="dropdown-content">
-                <a href="#">Registration Forms</a>
-                <a href="#">Overseas Visitors</a>
-                <a href="#">Temporary visitors</a>
+                <a class="isDisabled" href="#">Registration Forms</a>
+                <a class="isDisabled" href="#">Overseas Visitors</a>
+                <a class="isDisabled" href="#">Temporary visitors</a>
             </div>
         </div>
 
@@ -87,17 +87,17 @@
             </button>
             <div class="dropdown-content">
                 <a href="screening.html">Screening</a>
-                <a href="#">Minor Surgery</a>
-                <a href="#">Men's Health</a>
-                <a href="#">Women's Health</a>
-                <a href="#">Children's Health</a>
+                <a class="isDisabled" href="#">Minor Surgery</a>
+                <a class="isDisabled" href="#">Men's Health</a>
+                <a class="isDisabled" href="#">Women's Health</a>
+                <a class="isDisabled" href="#">Children's Health</a>
             </div>
         </div>
 
         <!-- Search bar  -->
         <form action="/action_page.php">
             <input name="search" placeholder="Search.." type="text">
-            <button type="submit"><i class="fa fa-search"></i></button>
+            <button type="submit" disabled><i class="fa fa-search"></i></button>
         </form>
     </div>
 </header>
