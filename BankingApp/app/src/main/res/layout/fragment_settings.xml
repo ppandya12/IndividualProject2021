@@ -107,21 +107,5 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/button40"
-        android:layout_width="296dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/roundedcorners"
-        android:clickable="true"
-        android:fontFamily="@font/comfortaa_bold"
-        android:hapticFeedbackEnabled="true"
-        android:text="Apply Changes"
-        android:textColor="#FFFFFF"
-        app:backgroundTint="@color/green2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

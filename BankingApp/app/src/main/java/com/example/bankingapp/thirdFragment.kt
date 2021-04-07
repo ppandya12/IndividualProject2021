@@ -34,8 +34,8 @@ class thirdFragment : Fragment() {
     }
 
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
 
         // Inflate the layout for this fragment
@@ -48,7 +48,7 @@ class thirdFragment : Fragment() {
 
         list.add("Current")
 
-       val list1: MutableList<String> = ArrayList()
+        val list1: MutableList<String> = ArrayList()
 
         list1.add("Alex")
         list1.add("James")
@@ -59,17 +59,17 @@ class thirdFragment : Fragment() {
 
         val adapter = activity?.let {
             ArrayAdapter<String>(
-                    it,
-                    android.R.layout.simple_spinner_item,
-                    list
+                it,
+                android.R.layout.simple_spinner_item,
+                list
             )
         }
 
         val adapter2 = activity?.let {
             ArrayAdapter<String>(
-                    it,
-                    android.R.layout.simple_spinner_item,
-                    list1
+                it,
+                android.R.layout.simple_spinner_item,
+                list1
             )
         }
         spinner.adapter = adapter
@@ -96,11 +96,11 @@ class thirdFragment : Fragment() {
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-                thirdFragment().apply {
-                    arguments = Bundle().apply {
-                        putString(ARG_PARAM1, param1)
-                        putString(ARG_PARAM2, param2)
-                    }
+            thirdFragment().apply {
+                arguments = Bundle().apply {
+                    putString(ARG_PARAM1, param1)
+                    putString(ARG_PARAM2, param2)
                 }
+            }
     }
 }

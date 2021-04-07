@@ -1,10 +1,12 @@
 package com.example.bankingapp
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.Switch
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 
@@ -32,6 +34,7 @@ class settingsFragment : Fragment() {
 
     }
 
+    @SuppressLint("UseSwitchCompatOrMaterialCode")
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?,
             savedInstanceState: Bundle?
@@ -39,9 +42,29 @@ class settingsFragment : Fragment() {
 
         val root = inflater.inflate(R.layout.fragment_settings, container, false)
 
-        val button40 = root.findViewById<View>(R.id.button40) as Button
+//toast message for switch button
+        val switch1 = root.findViewById<View>(R.id.switch1) as Switch
+        val switch2 = root.findViewById<View>(R.id.switch2) as Switch
+        val switch3 = root.findViewById<View>(R.id.switch3) as Switch
+        val switch4 = root.findViewById<View>(R.id.switch4) as Switch
 
-        button40.setOnClickListener {
+        switch1.setOnClickListener {
+            Toast.makeText(activity, "Changes Applied", Toast.LENGTH_LONG).show()
+        }
+
+        switch2.setOnClickListener {
+            Toast.makeText(activity, "Changes Applied", Toast.LENGTH_LONG).show()
+        }
+
+        switch2.setOnClickListener {
+            Toast.makeText(activity, "Changes Applied", Toast.LENGTH_LONG).show()
+        }
+
+        switch3.setOnClickListener {
+            Toast.makeText(activity, "Changes Applied", Toast.LENGTH_LONG).show()
+        }
+
+        switch4.setOnClickListener {
             Toast.makeText(activity, "Changes Applied", Toast.LENGTH_LONG).show()
         }
 
