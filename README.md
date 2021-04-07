@@ -23,7 +23,8 @@ Tasks users would be able to carry out (Functionality):
 - Search the website 
 
 # Visuals 
-- screenshots or video link?
+I uploaded a video to show you how the website works and looks.
+https://youtu.be/_Ygp7Bi_wpQ
 
 # Installation/ How to Use 
 On git hub, select the MedicalWebpage branch. Click on index.html, this will lead you to the homepage. By typing in 'john'
