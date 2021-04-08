@@ -34,7 +34,6 @@ https://youtu.be/TZhrtgYu7CU
 # Contributing
 There was only one contributor to this project/interface.
 
-//tests ?
 
 # Authors and acknowledgement
 Priyanka Pandya
