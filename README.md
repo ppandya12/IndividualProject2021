@@ -33,11 +33,8 @@ take you to a registration form (responsive). On the navigation bar when hoverin
 by clicking contact us, you will visit the Contact Us page. You can also access this page by scrolling down on the home
 page and clicking the 'find out more button' on the chat with us card. 
 
-
 # Contributing 
 There was only one contributor to this project/interface. 
-
-//tests ? 
 
 # Authors and acknowledgement
 Priyanka Pandya 
