@@ -20,7 +20,6 @@ Tasks users would be able to carry out (Functionality):
 - View other possible ways of accessing their banking information 
 - View any Updates 
 - View important information
-- Search on the website 
 
 # Visuals 
 I recorded a video to show how the website works
