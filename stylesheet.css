@@ -3,6 +3,7 @@ body {
     background-color: black;
 }
 
+/*Heading*/
 h1 {
      color: ghostwhite;
      font-family: 'Merriweather Sans', sans-serif;
@@ -34,7 +35,7 @@ h6 {
     color: ghostwhite;
     font-family: 'Nunito', sans-serif;
 }
-
+/*Banner customisation*/
 .banner-image {
     background-image: url('https://images.unsplash.com/photo-1535320903710-d993d3d77d29?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDB8fGZpbmFuY2V8ZW58MHwwfDB8&auto=format&fit=crop&w=700&q=60');
     background-size: cover;
@@ -44,13 +45,6 @@ h6 {
     margin-top:0;
 }
 
-/*header {
-    width: 100%;
-    height: 100vh;
-    background: url('https://images.unsplash.com/photo-1535320903710-d993d3d77d29?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDB8fGZpbmFuY2V8ZW58MHwwfDB8&auto=format&fit=crop&w=700&q=60') no-repeat 50% 50%;
-    background-size: cover;
-}*/
-
 .position-relative{
     position: relative;
     bottom: 90px;
@@ -58,6 +52,7 @@ h6 {
     height: 100px;
 }
 
+/*Button customisation*/
 .btn-success {
     background: #198754; }
 
@@ -67,6 +62,7 @@ h6 {
     background-color: yellowgreen !important; }
 
 
+/*Links*/
 d:link {
     color: green;
 }
@@ -83,7 +79,7 @@ a:active {
     color: forestgreen !important;
 }
 
-
+/*Navigation Bar*/
 .navbar {
     margin-top: 56px;
 }
@@ -105,6 +101,7 @@ a:active {
 .navbar-nav > li > .dropdown-menu { background-color: whitesmoke !important;
 }
 
+/*Column customisation for links */
 .col-text{
     color: black;
     text-align: left;
@@ -113,6 +110,7 @@ a:active {
     font-family: 'Nunito', sans-serif;
 }
 
+/*Footer customisation*/
 footer {
     background-color: darkgreen;
     padding-top: 5px;
