@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="appt.css" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Raleway&display=swap"
+          rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Englefield Medical Centre</title>
+    <link href="stylesheet.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <!-- Logout button -->
+    <div id="logout">
+        <button class="lgbtn btn-default btn-sm" id="logoutBtn" type="button">
+            <span class="fa fa-sign-out"></span>Log out
+        </button>
+    </div>
+
+    <!-- Shows patients name once logged in -->
+    <h3 style="font-size: 21px"> John Smith</h3>
+
+    <!-- Medical Centre Name  -->
+    <h1>Englefield Green Medical Center</h1>
+
+    <!-- Navbar with icons  -->
+    <div class="navigation">
+        <a class="active" href="loggedIn.html">Home <i class="fa fa-fw fa-home"></i></a>
+
+        <div class="dropdown">
+            <button class="dropbutton">Appointments
+                <i class="fa fa-fw fa-calendar"></i>
+            </button>
+            <div class="dropdown-content">
+                <a class="isDisabled" href="#">Book Appointment</a>
+                <a class="isDisabled" href="#">Telephone Consultation</a>
+                <a class="isDisabled" href="#">Change Appointment</a>
+                <a class="isDisabled" href="#">Cancel Appointment</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbutton">Prescriptions
+                <i class="fa fa-fw fa-file-text-o"></i>
+            </button>
+            <div class="dropdown-content">
+                <a class="isDisabled"href="#">New Prescription </a>
+                <a class="isDisabled"href="#">Repeat Prescriptions</a>
+                <a class="isDisabled"href="#">Private Prescriptions</a>
+                <a class="isDisabled"href="#">Prescription Cost</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbutton">Opening Times
+                <i class="fa fa-fw fa-clock-o"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">
+                    <p> Monday - Friday : 8am - 5pm <br>
+                        Saturday : 10am - 3pm<br>
+                        Sunday : Closed </p>
+                </a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbutton">New Patients
+                <i class="fa fa-fw fa-user-plus" ></i>
+            </button>
+            <div class="dropdown-content">
+                <a class="isDisabled" href="#">Registration Forms</a>
+                <a class="isDisabled" href="#">Overseas Visitors</a>
+                <a class="isDisabled" href="#">Temporary visitors</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbutton">Services
+                <i class="fa fa-plus-square"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="screening.html">Screening</a>
+                <a class="isDisabled" href="#">Minor Surgery</a>
+                <a class="isDisabled" href="#">Men's Health</a>
+                <a class="isDisabled" href="#">Women's Health</a>
+                <a class="isDisabled" href="#">Children's Health</a>
+            </div>
+        </div>
+
+        <!-- Search bar  -->
+        <form action="/action_page.php">
+            <input name="search" placeholder="Search.." type="text">
+            <button type="submit" disabled><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+</header>
+
+<h2><u> Book an Appointment </u></h2>
+
+<p style="text-align: left; padding-left: 100px; padding-right: 100px;"> Enter your details in the form below with your
+    contact information and symptoms. <br><br>
+    Please also select a day in which you have the most availability and we will be in touch with you as soon as
+    possible
+    to discuss any available time slots. Unfortunately due to the current COVID-19 situation we cannot give you specific
+    timings as slots are limited and can change depending on an if there are any last minute emergencies <br><br>
+    We apologise for any inconveniences and we will aim to contact you within the next 24 hours </p>
+
+<hr>
+
+<!-- Booking Form  -->
+<div class="apptForm">
+    <form action="/action_page.php" method="post" name="apptForm" onsubmit="return !! validateForm() " required>
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+                <input id="fname" name="firstname" placeholder="Your name.." type="text">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+                <input id="lname" name="lastname" placeholder="Your last name.." type="text">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="telephone">Telephone Number</label>
+            </div>
+            <div class="col-75">
+                <input id="telephone" placeholder="Your contact number.." type="text">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="days">Pick a day</label>
+            </div>
+            <div class="col-75">
+                <select id="days" name="days">
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                    <option value="saturday">Saturday</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label>Symptoms</label>
+            </div>
+            <div class="col-75">
+                <label>Headache</label>
+                <input id="headache" type="checkbox">
+                <label>Nausea</label>
+                <input id="nausea" type="checkbox">
+                <label>Lump</label>
+                <input id="lump" type="checkbox">
+                <label>Weight loss</label>
+                <input id="weightLoss" type="checkbox">
+                <label>Temperature</label>
+                <input id="temp" type="checkbox">
+                <label>Diarrhoea</label>
+                <input id="diarrhoea" type="checkbox">
+                <label>Body ache</label>
+                <input id="bodyAche" type="checkbox">
+                <label>Sore Throat</label>
+                <input id="soreThroat" type="checkbox">
+                <label>Allergies</label>
+                <input id="allergies" type="checkbox">
+                <label>Other</label>
+                <input id="other" type="checkbox">
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="subject">If selected other/any extra information </label>
+            </div>
+            <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Please describe your symptoms here or write N/A"
+                          style="height:200px;"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+
+<!-- Footer  -->
+<footer style="color: #f2f2f2">
+    <div class="row">
+        <div class="column">
+            <span style="font-size: 20px"><u><b>The Team</b></u></span>
+            <p>Doctors <br><br>
+                Nurses <br><br>
+                Reception and admin
+            </p>
+        </div>
+        <div class="column">
+            <span style="font-size: 20px"><u><b>Contact Us</b></u></span>
+            <p>45 Greenhouse Way, <br>
+                Surrey TW20 8YT <br><br>
+                <a href="englefieldmedcentre@nhsemails.com">englefieldmedcentre@nhsemails.com</a> <br><br>
+                (+44)78345234321
+            </p>
+        </div>
+        <div class="column">
+            <span style="font-size: 20px"><u><b>Services</b></u></span>
+            <p>Screenings <br><br>
+                Men's Health <br><br>
+                Women's Health <br><br>
+                Children's Health
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+
+    function validateForm() {
+        var x = document.forms["apptForm"]["fname"].value;
+        var y = document.forms["apptForm"]["lname"].value;
+        var z = document.forms["apptForm"]["telephone"].value;
+        var a = document.forms["apptForm"]["subject"].value;
+
+        var errormessage = "";
+
+        if (x == "" || x == null) {
+            errormessage += "first name field empty\n";
+            document.getElementById('fname').style.borderColor = "red";
+        }
+
+        if (y == "" || y == null) {
+            errormessage += "last name field empty\n";
+            document.getElementById('lname').style.borderColor = "red";
+        }
+
+        if (z == "" || z == null) {
+            errormessage += "telephone field empty\n";
+            document.getElementById('telephone').style.borderColor = "red";
+        }
+
+        if (a == "" || a == null) {
+            errormessage += "symptoms description field empty\n";
+            document.getElementById('subject').style.borderColor = "red";
+        }
+
+        if (errormessage != "") {
+            alert(errormessage);
+            return false;
+        } else {
+            confirm('appointment request sent');
+            return window.open('bookAppt.html');
+        }
+    }
+
+</script>
+
+<script type="text/javascript">
+    document.getElementById("logoutBtn").onclick = function () {
+        location.href='index.html';
+    };
+</script>
+
+</body>
+</html>

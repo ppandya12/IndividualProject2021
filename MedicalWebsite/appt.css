@@ -1,0 +1,104 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*Headings*/
+h2 {
+    text-align: center;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+    font-size: 35px;
+}
+
+h3 {
+    color: white;
+    float: right;
+    font-family: 'Comfortaa', cursive;
+}
+
+/* Form for booking appointment */
+.apptForm input[type=text], select, textarea {
+    width: 100%;
+    font-family: 'Raleway', sans-serif !important;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 15px !important;
+}
+
+.apptForm label {
+    padding: 12px 12px 12px 30px;
+    display: inline-block;
+}
+
+.apptForm input[type=submit] {
+    background-color: mediumblue;
+    font-family: 'Raleway', sans-serif;
+    color: ghostwhite;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+    padding: 10px 20px;
+    float: right;
+}
+
+.apptForm input[type=submit]:hover {
+    background-color: darkorange;
+}
+
+.apptForm {
+    font-family: 'Raleway', sans-serif;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*disabled buttons*/
+button:disabled,
+button[disabled]{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .apptForm .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .form-inline {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}

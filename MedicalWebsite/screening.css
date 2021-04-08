@@ -1,0 +1,66 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+/*headings*/
+h2 {
+    text-align: center;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+    font-size: 35px;
+}
+
+h3 {
+    color: white;
+    margin: 0;
+    display: inline-block;
+    float: right;
+    font-family: 'Comfortaa', cursive;
+}
+
+h4 {
+    text-align: center;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+    font-size: 25px;
+}
+
+/* button customisation */
+#topButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: mediumblue;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+#myBtn:hover {
+    background-color: darkorange;
+}
+
+.lgbtn {
+    float: right;
+    margin-left: 16px;
+}
+
+.lgbtn:hover {
+    background-color: orange;
+}
+
+.info {
+    line-height: 1.6;
+}
+
+
