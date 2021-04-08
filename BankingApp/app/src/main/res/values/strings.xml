@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">BankingApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_fragment">First Fragment</string>
+    <string name="user_name">Mr John Smith</string>
+    <string name="account_prompt">Select an account</string>
+    <string name="person_prompt">Select payee</string>
+    <string name="selected_item">Selected item:</string>
+
+
+    <string-array name="accountType">
+        <item> Current </item>
+    </string-array>
+
+    <string-array name="person">
+        <item> Alex </item>
+        <item> Mum </item>
+        <item> Dad </item>
+        <item> James </item>
+        <item> Harry </item>
+    </string-array>
+
+</resources>

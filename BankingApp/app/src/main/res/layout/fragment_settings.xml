@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settingsFragment">
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/ramabhadra"
+        android:text="CAPITAL BANK"
+        android:textColor="@color/grey"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="379dp"
+        android:layout_height="324dp"
+        android:layout_row="0"
+        android:layout_rowWeight="1"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="8dp"
+        android:backgroundTint="#FBFCFC"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23000002">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="#FBFCFC"
+                android:clickable="true"
+                android:fontFamily="@font/comfortaa_bold"
+                android:hapticFeedbackEnabled="true"
+                android:longClickable="true"
+                android:text="Enable push notifications"
+                android:textColorHighlight="@color/green1"
+                android:textSize="20sp"
+                app:backgroundTint="@color/green2"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="#FBFCFC"
+                android:clickable="true"
+                android:fontFamily="@font/comfortaa_bold"
+                android:hapticFeedbackEnabled="true"
+                android:text="Third party permissions"
+                android:textCursorDrawable="@color/green1"
+                android:textSize="20sp"
+                app:backgroundTint="@color/green2"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/switch3"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="#FBFCFC"
+                android:clickable="true"
+                android:fontFamily="@font/comfortaa_bold"
+                android:hapticFeedbackEnabled="true"
+                android:text="Turn off cookies"
+                android:textCursorDrawable="@color/green1"
+                android:textSize="20sp"
+                app:backgroundTint="@color/green2"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/switch4"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="#FBFCFC"
+                android:clickable="true"
+                android:fontFamily="@font/comfortaa_bold"
+                android:hapticFeedbackEnabled="true"
+                android:text="Digital Receipts"
+                android:textCursorDrawable="@color/green1"
+                android:textSize="20sp"
+                app:backgroundTint="@color/green2"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
