@@ -120,6 +120,7 @@ h3 {
     }
 }
 
+/* Image grid */
 .images {
     height: 200px;
     width: 175px;
@@ -128,10 +129,13 @@ h3 {
     display: inline-block;
 }
 
+/* Image sizing */
 .images img {
     height: 175px;
     width: 175px;
 }
+
+/* button customisation */
 
 button {
     background-color: mediumblue;
@@ -143,6 +147,7 @@ button {
     cursor: pointer;
     transition: all 0.5s;
 }
+
 
 .button span {
     cursor: pointer;

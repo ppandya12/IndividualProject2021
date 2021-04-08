@@ -6,6 +6,7 @@ body {
     font-size: 20px;
 }
 
+/*headings*/
 h2 {
     text-align: center;
     color: black;
@@ -21,6 +22,14 @@ h3 {
     font-family: 'Comfortaa', cursive;
 }
 
+h4 {
+    text-align: center;
+    color: black;
+    font-family: 'Comfortaa', cursive;
+    font-size: 25px;
+}
+
+/* button customisation */
 #topButton {
     display: none;
     position: fixed;
@@ -39,14 +48,6 @@ h3 {
 
 #myBtn:hover {
     background-color: darkorange;
-}
-
-
-h4 {
-    text-align: center;
-    color: black;
-    font-family: 'Comfortaa', cursive;
-    font-size: 25px;
 }
 
 .lgbtn {

@@ -3,18 +3,11 @@ header {
     padding: 8px 5px;
 }
 
+/* headings */
 h1 {
     text-align: left;
     color: white;
     font-family: 'Comfortaa', cursive;
-    padding-left: 10px;
-}
-
-
-.info {
-    text-align: center;
-    color: black !important;
-    font-family: 'Raleway', sans-serif;
     padding-left: 10px;
 }
 
@@ -27,6 +20,14 @@ h3 {
 }
 
 
+.info {
+    text-align: center;
+    color: black !important;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 10px;
+}
+
+/* Button customisation */
 .lgbtn {
     float: right;
     margin-left: 16px;
@@ -47,6 +48,7 @@ button {
     transition: all 0.5s;
 }
 
+/* login */
 .container {
     float: right;
     text-align: right;
@@ -88,7 +90,6 @@ button {
 }
 
 /* Navigation bar */
-
 .navigation {
     overflow: hidden;
     background-color: dodgerblue;
@@ -104,7 +105,7 @@ button {
     font-size: 17px;
 }
 
-/* Home Button */
+/* Active home button */
 .navigation a.active {
     font-weight: bold;
     color: ghostwhite;
@@ -186,11 +187,13 @@ button {
     display: block;
 }
 
+/* Horizontal line */
 hr {
     border: 5px solid dodgerblue;
     border-radius: 5px;
 }
 
+/* disable buttons */
 .isDisabled {
     color: currentColor;
     cursor: not-allowed;
@@ -198,10 +201,10 @@ hr {
     text-decoration: none;
 }
 
+/* Customisation of the footer */
 footer {
     background-color: dodgerblue;
 }
-
 
 footer .column {
     float: left;
@@ -219,6 +222,7 @@ footer .row:after {
 }
 
 
+/* responsive interface  */
 @media screen and (max-width: 600px) {
     .navigation a, .navigation input[type=text] {
         float: none;
