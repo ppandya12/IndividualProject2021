@@ -246,7 +246,8 @@
 
 
 <script>
-    function check(form)/*function to check userid & password*/ {
+    /*function to check username & password*/
+    function check(form) {
         //the following code checks whether the entered userid and password are matching
         if (form.fname.value == "john" && form.lname.value == "smith") {
             window.open('loggedIn.html')//opens the target page while Id & password matches
@@ -271,7 +272,7 @@
             myIndex = 1
         }
         x[myIndex - 1].style.display = "block";
-        setTimeout(carousel, 2000);
+        setTimeout(carousel, 3000);
     }
 
     //javascript for form
@@ -279,8 +280,8 @@
     var currentTab = 0; // Current tab is set to be the first tab (0)
     showTab(currentTab); // Display the current tab
 
+    // Displays the specified tab of the form
     function showTab(n) {
-        // This function will display the specified tab of the form ...
         var x = document.getElementsByClassName("tab");
         x[n].style.display = "block";
         // ... and fix the Previous/Next buttons:
@@ -294,7 +295,7 @@
         } else {
             document.getElementById("nextBtn").innerHTML = "Next";
         }
-        // ... and run a function that displays the correct step indicator:
+        // runs function that displays the correct step indicator:
         fixStepIndicator(n)
     }
 
@@ -318,8 +319,8 @@
         showTab(currentTab);
     }
 
+    // Form Validation
     function validateForm() {
-        // This function deals with validation of the form fields
         var x, y, i, valid = true;
         x = document.getElementsByClassName("tab");
         y = x[currentTab].getElementsByTagName("input");
@@ -340,19 +341,20 @@
         return valid; // return the valid status
     }
 
+    // Remove "active" class of all steps
     function fixStepIndicator(n) {
-        // This function removes the "active" class of all steps...
         var i, x = document.getElementsByClassName("step");
         for (i = 0; i < x.length; i++) {
             x[i].className = x[i].className.replace(" active", "");
         }
-        //... and adds the "active" class to the current step:
+        //adds the "active" class to the current step:
         x[n].className += " active";
     }
 </script>
 
-//redirect to book appointments page
+
 <script type="text/javascript">
+    //redirect to book appointments page
     document.getElementById("bookBtn").onclick = function () {
         location.href='bookAppt.html';
     };
