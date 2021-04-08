@@ -1,0 +1,33 @@
+/*Headings*/
+h1 {
+    color: ghostwhite;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
+
+}
+h3 {
+    color: ghostwhite; !important;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+h4 {
+    text-align: center;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+}
+
+h5{
+    text-align: left;
+    color: darkgreen;
+    font-family: 'Nunito', sans-serif;
+}
+h6 {
+    text-align: left;
+    color: ghostwhite;
+    font-family: 'Nunito', sans-serif;
+}
