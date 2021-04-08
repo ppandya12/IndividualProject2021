@@ -55,7 +55,7 @@ class secondFragment : Fragment() {
     private fun generateDummyList(size: Int): List<ExampleItem> {
         //empty array list
         val list = ArrayList<ExampleItem>()
-
+        //fill Array List
         list.add(ExampleItem(R.drawable.classic1, "Classic Pizza (V)", "Mozzarella Cheese, Tomato Sauce", "£13.00", R.drawable.ic_add))
         list.add(ExampleItem(R.drawable.classic3, "Chicken Pizza", "Chicken, Onion, Sweetcorn","£15.00", R.drawable.ic_add ))
         list.add(ExampleItem(R.drawable.classic4, "Veggie Dream Pizza (V)", "Courgette, Peppers, Artichoke, Aubergine", "£15.00", R.drawable.ic_add))
