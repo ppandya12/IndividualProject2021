@@ -21,7 +21,6 @@ Tasks you can carry out on the interface:
 - Request for a member of the centre to contact them
 - View Important Updates 
 
-
 # Visuals 
 I uploaded a video to show you how the website works and looks.
 https://youtu.be/_Ygp7Bi_wpQ
